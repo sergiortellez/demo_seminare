@@ -1,0 +1,20 @@
+.mockups_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.mockups_grid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* materialize crea un div al rededor de las imágenes que tienen la clase materialboxed */
+.center_image div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

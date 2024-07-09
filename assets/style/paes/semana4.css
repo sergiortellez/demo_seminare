@@ -1,0 +1,19 @@
+.collapsible-respuesta li {
+    display: inline;
+}
+
+#ilustracion_iconos img {
+    height: 4rem;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+}
+
+#ilustracion_iconos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+}

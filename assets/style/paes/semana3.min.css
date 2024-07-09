@@ -1,0 +1,1 @@
+.grid_reto{display:grid;grid-template-columns:repeat(4,1fr);gap:.4rem}.grid_reto span{display:flex;align-items:center;justify-content:center}.underlined{text-decoration:underline}

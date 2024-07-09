@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
+    <meta name="theme-color" content="#1e2020">
+
+    <title>PAE 9 | Seminare</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Materialize: Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- FontAwesome -->
+    <script data-search-pseudo-elements defer src="https://kit.fontawesome.com/b485de8470.js" crossorigin="anonymous"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel='stylesheet' href='../../assets/style/gist.min.css'>
+    <link rel="stylesheet" href="../../assets/style/pae-dev2.min.css">
+    <link rel="stylesheet" href="../../assets/style/paes/semana9.min.css">
+
+    <!-- Fav icon -->
+    <link rel='apple-touch-icon' sizes='180x180' href='../../assets/images/favicon/apple-touch-icon.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='../../assets/images/favicon/favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='16x16' href='../../assets/images/favicon/favicon-16x16.png'>
+    <link rel='manifest' href='../../assets/images/favicon/site.webmanifest'>
+
+</head>
+
+<body>
+    <!------------------------------------------------->
+    <!--    navbar    -->
+    <!------------------------------------------------->
+
+    <nav>
+        <!--  *** logo *** -->
+        <a href="../../dev2.html" class="logo-nav-container">
+            <img class="dev2-logo" src="../../assets/images/dev2-logo.svg" alt="DEV2">
+        </a>
+        <!--  *** end logo *** -->
+
+        <!--  *** menu ***  -->
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fad fa-bars fa-2x"></i></a> <!-- mobile menu -->
+
+        <ul class="hide-on-med-and-down nav-style">
+            <li>
+                <a href="#cero">
+                    <i class="fa-duotone fa-square-0 num-nav "></i>
+                    <span class="topic">
+                        Flexbox en la barra de navegación
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#uno">
+                    <i class="fa-duotone fa-square-1 num-nav"></i>
+                    <span class="topic">
+                        Flexbox en los artículos
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#dos">
+                    <i class="fa-duotone fa-square-2 num-nav "></i>
+                    <span class="topic">
+                        Flexbox en el footer
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#tres">
+                    <i class="fa-duotone fa-square-3 num-nav "></i>
+                    <span class="topic">
+                        Flexbox en la barra lateral
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#cuatro">
+                    <i class="fa-duotone fa-square-4 num-nav "></i>
+                    <span class="topic">
+                        Entrada de formato libre y microblogging
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#cinco">
+                    <i class="fa-duotone fa-square-5 num-nav "></i>
+                    <span class="topic">
+                        Entrega tu trabajo
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#cover">
+                    <i class="fa-duotone fa-square-up num-nav"></i>
+                </a>
+            </li>
+        </ul>
+        <!--  *** end menu ***  -->
+
+        <!--  *** user ***  -->
+        <div class="user-nav-container hide-on-med-and-down dropdown-trigger" data-target="userDropdown">
+            <i class="fa-duotone fa-image-user"></i>
+        </div>
+        <!--  *** end user ***  -->
+    </nav>
+
+    <!-- side nav structure -->
+    <div class="sidenav" id="mobile-demo">
+        <div class="close-card">
+            <i class="fa-duotone fa-ellipsis-vertical"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="#cero" class="sidenav-close">
+                    <i class="fa-duotone fa-square-0 num-nav "></i>
+                    <span class="topic">
+                        Barra de navegación
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#uno" class="sidenav-close">
+                    <i class="fa-duotone fa-square-1 num-nav "></i>
+                    <span class="topic">
+                        Artículos
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#dos" class="sidenav-close">
+                    <i class="fa-duotone fa-square-2 num-nav "></i>
+                    <span class="topic">
+                        Footer
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#tres" class="sidenav-close">
+                    <i class="fa-duotone fa-square-3 num-nav "></i>
+                    <span class="topic">
+                        Barra lateral
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#cuatro" class="sidenav-close">
+                    <i class="fa-duotone fa-square-4 num-nav "></i>
+                    <span class="topic">
+                        formato libre y microblogging
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#cinco" class="sidenav-close">
+                    <i class="fa-duotone fa-square-5 num-nav "></i>
+                    <span class="topic">
+                        Entrega tu trabajo
+                    </span>
+                </a>
+            </li>
+            <!--  *** user ***  -->
+            <div class="user-nav-container">
+                <div><i class="fa-duotone fa-image-user"></i> Nombre del Alumno</div>
+                <hr>
+                <div class="colegio"></div>
+            </div>
+            <!--  *** end user ***  -->
+        </ul>
+    </div>
+
+    <!-- Dropdown Structure -->
+    <div id="userDropdown" class="dropdown-content">
+        <div>Nombre del Alumno</div>
+        <hr>
+        <div class="colegio"></div>
+    </div>
+
+
+
+    <!------------------------------------------------->
+    <!--    end navbar    -->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--    cover    -->
+    <!------------------------------------------------->
+    <section class="cover" id="cover">
+        <div class="responsive-container">
+            <header>
+                <div #id="numero">
+                    <span>PAE </span><span>9</span>
+                </div>
+                <div id="titulo">
+                    <i class="fa-duotone fa-quote-left"></i>
+                    <span>La magia de Flexbox</span>
+                    <i class="fa-duotone fa-quote-right"></i>
+                </div>
+            </header>
+
+            <div id="temas">
+                <div><i class="fa-duotone fa-book-open-reader"></i> <span class="texto-temas">Temas:</span></div>
+
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> Flexbox</span>
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> nth Child</span>
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> Pseudoelements</span>
+            </div>
+            <div id="objetivo">
+                <span class="objetivo_titulo"><i class="fa-duotone fa-bullseye"></i> Objetivo:</span>
+
+                <p>Este PAE consta de muchos casos prácticos de aplicación de Flexbox y CSS avanzado. Estas técnicas de diseño te serán útiles para crear tus propios proyectos. </p>
+            </div>
+            <a href="#cero" id="arrowStart"><i class="fa-duotone fa-square-arrow-down continue"></i></a>
+        </div>
+
+
+    </section>
+    <!------------------------------------------------->
+    <!--    end cover    -->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--    quote    -->
+    <!------------------------------------------------->
+    <section id="quote">
+        <div class="quoteText">
+            <i class="fa-duotone fa-quote-left"></i>
+            Cualquier tecnología suficientemente avanzada es indistinguible de la magia.
+            <i class="fa-duotone fa-quote-right"></i>
+        </div>
+        <p class="autor">--Arthur C. Clarke</p>
+    </section>
+    <!------------------------------------------------->
+    <!--    end quote    -->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	cero	-->
+    <!------------------------------------------------->
+    <div class='scrollspy' id='cero'>
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>0</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Flexbox en la barra de navegación</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-4 mb-4">
+                <!--  primer columna -->
+                <div>
+                    <p>Vamos a definir, de una vez por todas los estilos de nuestra barra de navegación. Será una muy buena oportunidad para mejorar tus habilidades en flexbox.</p>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Estilos generales</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Empecemos con algunos estilos sencillos. <span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> para cada uno de sus archivos <span class='file'><i class='fab fa-css3-alt'></i>
+                            <span>estilos_persona.css</span></span> (1 por persona, 2 en total): </p>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                <span class='verbo'>Crea</span> un <span class='concepto'>selector</span> que apunte exclusivamente a la <span class='tag-html'><i class='fas fa-chevron-left'></i><b>nav</b><i class='fas fa-chevron-right'></i></span>
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                <span class='verbo'>Usa</span> el <span class='concepto'>selector</span> que creaste en el inciso anterior para especificar que el <span class='resaltado'>tamaño de texto </span><a class=" tooltipped more-info" data-position="top" data-tooltip="pista: font-size"><i
+                                        class='fad fa-question-square'></i></a> de todo en la barra de navegación sea <span class='resaltado'>1.3rem</span>
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                <span class='verbo'>Localiza</span> en tu archivo CSS un <span class='concepto'>selector</span> que apunta a todas las <span class='tag-html'><i class='fas fa-chevron-left'></i><b>a</b><i class='fas fa-chevron-right'></i></span> que están dentro de los <span
+                                    class='tag-html'><i class='fas fa-chevron-left'></i><b>li</b><i class='fas fa-chevron-right'></i></span> que a su vez están dentro de los elementos <span class='tag-html'><i class='fas fa-chevron-left'></i><b>ul</b><i class='fas fa-chevron-right'></i></span> que
+                                viven dentro de
+                                <span class='tag-html'><i class='fas fa-chevron-left'></i><b>nav</b><i class='fas fa-chevron-right'></i></span> (el selector ya existe, se creó en un pae previo).
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                En dicho <span class='concepto'>selector</span> <span class='verbo'>especifica</span> que esos elementos tengan un <span class='resaltado'>color de texto</span> representado por el hexadecimal <span class='resaltado'>#fff</span>.
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                    <!-- título -->
+                    <div class="section-title mt-4">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Selector usando pseudoelementos</span>
+                    </div>
+                    <!-- end título -->
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> para cada uno de sus archivos <span class='file'><i class='fab fa-css3-alt'></i> <span>estilos_persona.css</span></span> (uno por persona dos en
+                        total) tendrán el reto de crear un selector con las siguientes características: </p>
+
+                    <p><span class='verbo'>Crea</span> un <span class='concepto'>selector</span> que apunte únicamente a todos los elementos <span class='tag-html'><i class='fas fa-chevron-left'></i><b>a</b><i class='fas fa-chevron-right'></i></span> que se encuentran dentro de elementos <span
+                            class='tag-html'><i class='fas fa-chevron-left'></i><b>li</b><i class='fas fa-chevron-right'></i></span> que vivan dentro de un elemento <span class='tag-html'><i class='fas fa-chevron-left'></i><b>ul</b><i class='fas fa-chevron-right'></i></span> que exclusivamente se
+                        encuentre en
+                        nuestra <span class='tag-html'><i class='fas fa-chevron-left'></i><b>nav</b><i class='fas fa-chevron-right'></i></span>. Pero este selector es muy especial, pues sólo queremos seleccionar los elementos cuando el <span class='resaltado'> mouse del usuario</span> se encuentra
+                        <span class='resaltado'>sobre</span> dicho elemento. <a class=" tooltipped more-info" data-position="top" data-tooltip="el video «CSS avanzado» tiene la clave de este ejercicio."><i class='fad fa-question-square'></i></a> </p>
+                    <p><span class='verbo'>Usa</span> el selector que acabas de crear para aplicar las siguientes propiedades:</p>
+
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                <code class="terminal">text-decoration: underline;</code>
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                <code class="terminal">color: greenyellow;</code>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                    <p><span class='verbo'>Ejecuta</span> la vista previa de tu proyecto, ¿qué efecto tuvo esta implementación cuando pasas tu mouse sobre los elementos de tu navbar?</p>
+
+
+
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Uso de Flexbox</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Modificaremos el elemento <span class='tag-html'><i class='fas fa-chevron-left'></i><b>ul</b><i class='fas fa-chevron-right'></i></span> dentro de nuestra barra de navegación.<br> <span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i
+                                class='fak fa-user-1'></i></span> para cada uno de sus archivos <span class='file'><i class='fab fa-css3-alt'></i>
+                            <span>estilos_persona.css</span></span> (1 por persona, 2 en total): </p>
+
+                    <p>Realiza todas las modificaciones necesarias para que los elementos dentro de <span class='tag-html'><i class='fas fa-chevron-left'></i><b>ul</b><i class='fas fa-chevron-right'></i></span> se vean como en la siguiente imagen:</p>
+
+                    <img class="materialboxed mt-2" width="100%" src="../../assets/images/paes/nav_formated.webp">
+                    <p>Aquí tienes algunas pistas:</p>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                <span class='tag-html'><i class='fas fa-chevron-left'></i><b>ul</b><i class='fas fa-chevron-right'></i></span> debe desplegarse como un <span class='concepto'>contenedor de flexbox</span> .
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                Los elementos de <span class='tag-html'><i class='fas fa-chevron-left'></i><b>ul</b><i class='fas fa-chevron-right'></i></span> se <span class='concepto'>alinean</span> al centro.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                Los elementos de <span class='tag-html'><i class='fas fa-chevron-left'></i><b>ul</b><i class='fas fa-chevron-right'></i></span> se <span class='concepto'>justifican</span> con espacio proporcional entre ellos y al rededor de ellos.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                <span class='tag-html'><i class='fas fa-chevron-left'></i><b>ul</b><i class='fas fa-chevron-right'></i></span> tiene un borde inferior blanco de un pixel de ancho.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">5</div>
+                            <div>
+                                Un padding inferior ayuda a darle espacio a los elementos respecto a su borde.
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>solución <i class='fad fa-code'></i></span>
+                            </div>
+                            <div class="collapsible-body forbidden">
+                                <!-- cuerpo  -->
+                                <!--Inicia CSS Desplegado-->
+
+                                <div class='title-bar-css'>CSS <span class='fab fa-css3-alt '></span></div>
+                                <code data-gist-id='ae3dd99f70939ff67a79d78677fdaba0' data-gist-hide-footer='true' data-gist-highlight-line='lines_comma_separated'></code>
+
+                                <!--Termina CSS Desplegado-->
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- end collapsible -->
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end cero	-->
+    <!------------------------------------------------->
+    <!------------------------------------------------->
+    <!--	uno	-->
+    <!------------------------------------------------->
+    <div class='scrollspy' id='uno'>
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>1</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Flexbox en los artículos</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-3 mb-4">
+                <!--  primer columna -->
+                <div>
+                    Los artículos de nuestro blog también pueden verse beneficiados con una sencilla implementación de flexbox. Recuerda que cada artículo tiene tres partes; un <span class='tag-html'><i class='fas fa-chevron-left'></i><b>header</b><i class='fas fa-chevron-right'></i></span>, un
+                    <span class='tag-html'><i class='fas fa-chevron-left'></i><b>div</b><i class='fas fa-chevron-right'></i></span> haciendo wrapping al contenido, y un <span class='tag-html'><i class='fas fa-chevron-left'></i><b>footer</b><i class='fas fa-chevron-right'></i></span>. Trabajaremos en
+                    el <span class='tag-html'><i class='fas fa-chevron-left'></i><b>header</b><i class='fas fa-chevron-right'></i></span> de todos los artículos para lograr el siguiente resultado:
+
+                    <img class="materialboxed mt-2" width="100%" src="../../assets/images/paes/header_article.webp">
+
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>El título a la izquierda, la fecha a la derecha.</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Alinear el encabezado de todos los artículos será sencillo si te das cuenta que en cada encabezado hay solo dos elementos directos <a class=" tooltipped more-info" data-position="top" data-tooltip="hijos directos"><i class='fad fa-question-square'></i></a> dentro de <span
+                            class='tag-html'><i class='fas fa-chevron-left'></i><b>hgroup</b><i class='fas fa-chevron-right'></i></span> </p>
+                    <!--Inicia HTML Desplegado-->
+
+                    <div class='title-bar-html'>HTML <span class='fab fa-html5'></span></div>
+                    <code data-gist-id='8cf3228c6dc7f1e15f97de6756d4b837' data-gist-hide-footer='true' data-gist-highlight-line='6,8'></code>
+
+                    <!--Termina HTML Desplegado-->
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> Para cada uno de tus archivos <span class='file'><i class='fab fa-css3-alt'></i> <span>estilos_persona.css</span></span> :</p>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                <span class='verbo'>Crea</span> un apuntador a todos los <span class='tag-html'><i class='fas fa-chevron-left'></i><b>hgroup</b><i class='fas fa-chevron-right'></i></span> que vivan dentro del <span class='tag-html'><i class='fas fa-chevron-left'></i><b>header</b><i
+                                        class='fas fa-chevron-right'></i></span> de un <span class='tag-html'><i class='fas fa-chevron-left'></i><b>article</b><i class='fas fa-chevron-right'></i></span>.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                <span class='verbo'>Usa</span> tu nuevo apuntador para hacer que esos <span class='tag-html'><i class='fas fa-chevron-left'></i><b>hgroup</b><i class='fas fa-chevron-right'></i></span> se desplieguen como <span class='concepto'>flex</span>.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                Los elementos dentro de <span class='tag-html'><i class='fas fa-chevron-left'></i><b>hgroup</b><i class='fas fa-chevron-right'></i></span> deben <span class='concepto'>alinearse</span> <span class='resaltado'>al centro</span>.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                Aplica también la propiedad:
+                                <code class="terminal">justify-content: space-between;</code>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                    <p>¿Te das cuenta que al usar <span class='concepto'>space-between</span> hemos forzado que el primer elemento (el título) se pegue a la izquierda y el segundo elemento (la fecha) a la derecha? No olvides esta técnica, seguramente te será útil en el futuro.</p>
+
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Buscando la perfección</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Casi hemos logrado el objetivo, pero la perfección vive en el detalle. ¿Te das cuenta que el título y su ícono ilustrativo no están perfectamente alineados? Además hace falta un espacio entre ambos. En diseño, el espacio entre elementos es muy importante para mejorar la
+                        experiencia de
+                        usuario, cada vez que hablemos de aumentar el espacio entre elementos en un sitio o aplicación podríamos usar la expresión <span class='concepto'>darle aire</span>. </p>
+
+                    <img class="materialboxed mt-2" width="100%" src="../../assets/images/paes/title_alignment.webp" alt="alineación del título">
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> arreglen los problemas de alineación en el título: </p>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                <span class='verbo'>Crea</span> un selector que apunte a todos los elementos <span class='tag-html'><i class='fas fa-chevron-left'></i><b>h2</b><i class='fas fa-chevron-right'></i></span> que se encuentren dentro de <span class='tag-html'><i
+                                        class='fas fa-chevron-left'></i><b>hgroup</b><i class='fas fa-chevron-right'></i></span> que vivan dentro del <span class='tag-html'><i class='fas fa-chevron-left'></i><b>header</b><i class='fas fa-chevron-right'></i></span> de cualquier <span
+                                    class='tag-html'><i class='fas fa-chevron-left'></i><b>article</b><i class='fas fa-chevron-right'></i></span>.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                Dichos elementos deben desplegarse como <span class='concepto'>contenedores flex</span>.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                También se <span class='concepto'>alinearán</span> al centro.
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> dale aire a los elementos que componen el título:</p>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                <span class='verbo'>Crea</span> un selector que apunte a todos los elementos <span class='tag-html'><i class='fas fa-chevron-left'></i><b>img</b><i class='fas fa-chevron-right'></i></span> dentro de los <span class='tag-html'><i
+                                        class='fas fa-chevron-left'></i><b>h2</b><i class='fas fa-chevron-right'></i></span> que se encuentren dentro de <span class='tag-html'><i class='fas fa-chevron-left'></i><b>hgroup</b><i class='fas fa-chevron-right'></i></span> que vivan dentro del <span
+                                    class='tag-html'><i class='fas fa-chevron-left'></i><b>header</b><i class='fas fa-chevron-right'></i></span> de cualquier <span class='tag-html'><i class='fas fa-chevron-left'></i><b>article</b><i class='fas fa-chevron-right'></i></span>.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                Dichos elementos tendrán un <span class='resaltado'>margen derecho</span> con valor de <span class='resaltado'>1rem</span> .
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- end lista -->
+
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end uno	-->
+    <!------------------------------------------------->
+    <!------------------------------------------------->
+    <!--	dos	-->
+    <!------------------------------------------------->
+    <div class='scrollspy' id='dos'>
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>2</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Flexbox en el footer</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-3 mb-4">
+                <!--  primer columna -->
+                <div>
+                    <p>Nuestro objetivo en el <span class='tag-html'><i class='fas fa-chevron-left'></i><b>footer</b><i class='fas fa-chevron-right'></i></span> del blog <a class=" tooltipped more-info" data-position="top"
+                            data-tooltip="nos referimos al footer principal no a los footers de cada article"><i class='fad fa-question-square'></i></a> es usar flexbox para lograr este resultado: </p>
+                    <img class="materialboxed mt-2" width="100%" src="../../assets/images/paes/footer_flex.webp" alt="footer flex">
+
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Nombres en los extremos, leyenda al centro. </span>
+                    </div>
+                    <!-- end título -->
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> Para lograr dicho resultado en sus archivos <span class='file'><i class='fab fa-css3-alt'></i> <span>estilos_persona.css</span></span> intenten: </p>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                <span class='verbo'>Localiza</span> un <span class='concepto'>id</span> que se llama <span class='resaltado'>#footer_blog</span> (ya existe lo creamos en PAES anteriores).
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                Usa ese selector para convertir el <span class='tag-html'><i class='fas fa-chevron-left'></i><b>footer</b><i class='fas fa-chevron-right'></i></span> en un <span class='concepto'>contenedor flex</span> con sus elementos <span class='concepto'>alineados</span> al <span
+                                    class='resaltado'>centro</span> y <span class='concepto'>justificados </span> con el valor <span class='resaltado'>space-between</span>.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                Añade también un <span class='concepto'>padding</span> superior e inferior de <span class='resaltado'>4rem</span> y un <span class='concepto'>padding</span> izquierdo y derecho de <span class='resaltado'>0</span>. ¿Recuerdas cómo hacerlo en una sola línea de código?
+                                <a href="../teoria/semana7.html#tres" target="_blank"><i class="fa-duotone fa-link"></i></a>
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                Por último especifica que el <span class='concepto'>tamaño de texto</span> en todo el footer es igual a <span class='resaltado'>1.3rem</span>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                    <!-- end lista -->
+
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Seleccionar sólo el segundo <span class='tag-html'><i class='fas fa-chevron-left'></i><b>div</b><i class='fas fa-chevron-right'></i></span> de #footer_blog</span>
+                    </div>
+                    <!-- end título -->
+                    <p>En el video «CSS avanzado» aprendimos a seleccionar el enésimo elemento hijo de otro elemento. <br> <span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> <span class='verbo'>Usen</span> ese conocimiento
+                        para
+                        crear un selector que apunte al segundo elemento del id <span class='resaltado'>#footer_blog</span> <a class=" tooltipped more-info" data-position="top"
+                            data-tooltip="aprovecha el hecho de que todos los elementos del footer son «div» y que queremos el segundo elemento de un total de tres "><i class='fad fa-question-square'></i></a> . </p>
+                    <p>Con el selector que has creado <span class='verbo'>especifica</span> que la leyenda del footer <i style="font-size: 0.8rem;">«Blog creado en 'nombre de tu colegio'.
+                            Las opiniones contenidas en este proyecto pertenecen a los autores de cada entrada.»</i> tenga el texto reducido a <span class='resaltado'>0.9rem</span> </p>
+
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Solución <i class='fad fa-code'></i></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                ¿Realmente necesitas ver la solución?
+                                <!-- collapsible -->
+                                <ul class="collapsible collapsible-standard">
+                                    <li class="">
+                                        <div class="collapsible-header waves-effect waves-light">
+                                            <span>Solución <i class='fad fa-code'></i>(ahora sí)</span>
+                                        </div>
+                                        <div class="collapsible-body forbidden">
+                                            <!-- cuerpo  -->
+                                            <!--Inicia CSS Desplegado-->
+
+                                            <div class='title-bar-css'>CSS <span class='fab fa-css3-alt '></span></div>
+                                            <code data-gist-id='54b1040670423eff72ebf151dfc015d1' data-gist-hide-footer='true' data-gist-highlight-line='lines_comma_separated'></code>
+
+                                            <!--Termina CSS Desplegado-->
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- end collapsible -->
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapsible -->
+
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end dos	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	tres	-->
+    <!------------------------------------------------->
+    <div class='scrollspy' id='tres'>
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>3</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Flexbox en la barra lateral</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-3 mb-4">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Añade un icono ilustrativo</span>
+                    </div>
+                    <!-- end título -->
+                    <p>A partir de ahora, cada entrada de microblogging debe tener un ícono ilustrativo de <span class='resaltado'>60px</span> de ancho y <span class='resaltado'>alto automático</span>. El ícono es parecido al que has estado usando en los títulos de los artículos. La diferencia es
+                        que este ícono
+                        será el mismo para todas tus entradas de microblogging. Piénsalo como un avatar o un ícono que te
+                        represente. Puedes fabricarlo por tu cuenta o descargarlo de <a href="https://flaticon.com" target="_blank">flat icon <i class="fa-duotone fa-link"></i></a>. </p>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Estructura de microblogging</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Cómo hemos añadido el ícono ilustrativo para todas las entradas de microblogging, la estructura quedará como sigue: </p>
+                    <!--Inicia HTML Desplegado-->
+
+                    <div class='title-bar-html'>HTML <span class='fab fa-html5'></span></div>
+                    <code data-gist-id='5b008f68a80132325b41909f4c2a4ff2' data-gist-hide-footer='true' data-gist-highlight-line='3,4'></code>
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> Para todos sus archivos <span class='file'><i class='fab fa-html5'></i> <span>mi_tema.html</span></span> <span class='verbo'>actualicen</span> la
+                        estructura de las entradas de microblogging que realizaron antes de este PAE.</p>
+
+                    <!--Termina HTML Desplegado-->
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Estilos de barra lateral</span>
+                    </div>
+                    <!-- end título -->
+                    <span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> Para cada uno de sus archivos <span class='file'><i class='fab fa-css3-alt'></i> <span>estilos_persona.css</span></span>:
+
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                <span class='verbo'>Crearás</span> un selector que apunte al título <span class='tag-html'><i class='fas fa-chevron-left'></i><b>h2</b><i class='fas fa-chevron-right'></i></span> dentro de la barra lateral <span class='tag-html'><i
+                                        class='fas fa-chevron-left'></i><b>aside</b><i class='fas fa-chevron-right'></i></span>.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                <span class='verbo'>Usarás</span> dicho selector para <span class='resaltado'>centrar el texto</span> y ajustarlo de <span class='resaltado'>tamaño</span> a <span class='resaltado'>1.3rem</span>.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                <span class='verbo'>Crea</span> un selector que apunte sólo a los <span class='tag-html'><i class='fas fa-chevron-left'></i><b>div</b><i class='fas fa-chevron-right'></i></span> <span class='resaltado'>pares</span> que viven dentro de <span class='tag-html'><i
+                                        class='fas fa-chevron-left'></i><b>aside</b><i class='fas fa-chevron-right'></i></span>
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                Usa el selector que creaste en el inciso anterior para que el <span class='resaltado'>color de fondo</span> de tus entradas de microblogging <span class='resaltado'>pares</span> sea:
+                                <code class="terminal">rgb(44, 43, 43)</code>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- end lista -->
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Primer reto</span>
+                    </div>
+                    <!-- end título -->
+
+                    <p>
+                        Imagina que el ícono ilustrativo de tus microblogs es parecido a este: <i class='fad fa-user' style="color:blueviolet;"></i> <br>
+                        <span class='verbo'>Crearás</span> un fondo circular para tu ícono con el <span class='concepto'>color de fondo</span> <span class='resaltado'>blanco</span> (o que contraste) y un <span class='concepto'>padding</span> de <span class='resaltado'>0.5rem</span>.
+                    </p>
+                    <p>¿Tu ícono se ve así? <i class='fad fa-user' style="background-color: fff; border-radius: 50%; color:blueviolet; padding: 0.5rem;"></i></p>
+
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Solución <i class='fad fa-code'></i></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--Inicia CSS Desplegado-->
+
+                                <div class='title-bar-css'>CSS <span class='fab fa-css3-alt '></span></div>
+                                <code data-gist-id='6b466c5766ae54e283d5dab437379214' data-gist-hide-footer='true' data-gist-highlight-line='lines_comma_separated'></code>
+
+                                <!--Termina CSS Desplegado-->
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- end collapsible -->
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Segundo reto</span>
+                    </div>
+                    <!-- end título -->
+                    <p><span class='verbo'>Usarás</span> los conocimientos que has adquirido en el vídeo: <a href="../teoria/semana9.html#cuatro">Caso práctico: uso de flexbox<i class="fa-duotone fa-link"></i> </a> para hacer que tus entradas de microblogging se vean así:</p>
+
+                    <img class="materialboxed mt-2" width="100%" src="../../assets/images/paes/ejemplo_aside.webp">
+                    <p>Nos encantaría guiarte como siempre, darte los pasos a ejecutar o proponerte una solución. Pero jamás aprenderás a programar si no programas por tu cuenta. Buena suerte <i class="fa-thin fa-hand-fingers-crossed" style="color: var(--primary);"></i> </p>
+
+                </div>
+
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end tres	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	cuatro	-->
+    <!------------------------------------------------->
+    <div class='scrollspy' id='cuatro'>
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>4</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Entrada de formato libre y microblogging</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-3 mb-2">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Entrada de formato libre</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Esta semana harás una entrada nueva para cualquiera de tus dos temas. Será de formato libre pudiendo escoger el sub tema y cualquiera de los siguientes formatos:</p>
+                    <ul>
+                        <li style="list-style: circle;"> <strong class='concepto'>Texto con ilustración:</strong> <i>¿Te gusta escribir?</i></li>
+                        <li style="list-style: circle;"> <strong class='concepto'>Meme: </strong> <i>¿Eres una eminencia en memes o te gusta dibujar?</i></li>
+                        <li style="list-style: circle;"> <strong class='concepto'>Video corto:</strong> <i>¿Eres nuestra próxima estrella de tiktok?</i></li>
+                        <li style="list-style: circle;"> <strong class='concepto'>Video largo: </strong> <i>¿Necesitas más tiempo para desarrollar tus ideas?</i></li>
+                    </ul>
+                    <p>Es importante que sea el formato que sea respetes la estructura de entrada propuesta a lo largo de las últimas semanas:</p>
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Estructura de entrada <i class="fa-duotone fa-code"></i></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--Inicia HTML Desplegado-->
+
+                                <div class='title-bar-html'>HTML <span class='fab fa-html5'></span></div>
+                                <code data-gist-id='3c8e37ba6fc6c32764960f857a6e0599' data-gist-hide-footer='true' data-gist-highlight-line='lines_comma_separated'></code>
+
+                                <!--Termina HTML Desplegado-->
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- end collapsible -->
+
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    No olvides <span class='verbo'>repasar</span> los requisitos para cada tipo de entrada:
+                    <!-- lista -->
+                    <ul class=" collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                La temática de la entrada debe seguir siendo un sub tema u opinión de tu tema principal.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                Siempre debes <span class='resaltado'>investigar</span> y citar tus fuentes en el <span class='tag-html'><i class='fas fa-chevron-left'></i><b>footer</b><i class='fas fa-chevron-right'></i></span> de la entrada.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                La extensión de las entradas de texto es de <span class='resaltado'>3 a 5 párrafos</span> (Cada párrafo tiene entre 100 y 150 palabras).
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                La ilustración de las entradas de texto puede ser descargada de internet.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">5</div>
+                            <div>
+                                Si tu entrada es un meme debe ser <span class='resaltado'>hecho por ti</span> , demuestra tu creatividad, no puede ser descargado de internet.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">6</div>
+                            <div>
+                                La duración de los videos cortos es de <span class='resaltado'>un minuto</span>. Debe ser original <a class=" tooltipped more-info" data-position="top" data-tooltip="hecho por ti."><i class='fad fa-question-square'></i></a> , subirse a alguna
+                                plataforma e insertarse como <span class='tag-html'><i class='fas fa-chevron-left'></i><b>iframe</b><i class='fas fa-chevron-right'></i></span> .
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">7</div>
+                            <div>
+                                La duración de los videos largos es de <span class='resaltado'>3 a 5 minutos</span>. Debe ser original <a class=" tooltipped more-info" data-position="top" data-tooltip="hecho por ti."><i class='fad fa-question-square'></i></a> , subirse a alguna
+                                plataforma e insertarse como <span class='tag-html'><i class='fas fa-chevron-left'></i><b>iframe</b><i class='fas fa-chevron-right'></i></span>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+            <hr class="horizontal-divider">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-2 mb-4">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Microblogging</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Esta semana te pediremos que crees algunas entradas de microblogging.</p>
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> para cada uno de sus archivos <span class='file'><i class='fab fa-html5'></i> <span>mi_tema.html</span></span> (2 por persona 4 en total). <span
+                            class='verbo'>Crea</span> 5 entradas de
+                        microblogging por cada uno de tus temas. Asegúrate de cumplir las reglas para el microblogging y respetar la nueva estructura de microblogging: </p>
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Estructura de entrada microblogging <i class='fad fa-code'></i></span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--Inicia HTML Desplegado-->
+
+                                <div class='title-bar-html'>HTML <span class='fab fa-html5'></span></div>
+                                <code data-gist-id='5b008f68a80132325b41909f4c2a4ff2' data-gist-hide-footer='true' data-gist-highlight-line='lines_comma_separated'></code>
+
+                                <!--Termina HTML Desplegado-->
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- end collapsible -->
+
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Reglas para el microblogging</span>
+                    </div>
+                    <!-- end título -->
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                La extensión máxima de cada entrada es de 140 caracteres. <a class=" tooltipped more-info" data-position="top" data-tooltip="140 letras"><i class='fad fa-question-square'></i></a>
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                La entrada debe relacionarse con tu tema.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                Tus entradas deben estar fundamentadas en investigación, aunque no te pediremos bibliografía.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                Debes asegurarte de que tus entradas sean constructivas, antes de publicar un pensamiento pregúntate en qué nutre al mundo que lo publiques.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">5</div>
+                            <div>
+                                De ninguna manera la entrada puede lesionar a otros.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">6</div>
+                            <div>
+                                De ninguna manera tus entradas pueden promover el odio o la exclusión.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">7</div>
+                            <div>
+                                Antes de publicar una entrada pregúntate si es algo que dirías con naturalidad frente a tu familia o profesores.
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+
+    </div>
+    <!------------------------------------------------->
+    <!--	end cuatro	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	cinco	-->
+    <!------------------------------------------------->
+    <div class='scrollspy' id='cinco'>
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>5</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Entrega tu trabajo</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns golden ***	-->
+            <div class="twoColumnsGolden mt-4 mb-3">
+                <!-- Columna pequeña -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Compartir en git <i class='fa-brands fa-git-alt'></i></span>
+                    </div>
+                    <!-- end título -->
+                    <p>Recuerda siempre hacer <span class='concepto'>pull<i class='fa-brands fa-git-alt'></i></span> antes de empezar a trabajar y <span class='concepto'>add<i class='fa-brands fa-git-alt'></i></span>, <span class='concepto'>commit<i class='fa-brands fa-git-alt'></i></span> y <span
+                            class='concepto'>push<i class='fa-brands fa-git-alt'></i></span> a tu repositorio cuando terminas de
+                        trabajar.</p>
+                    <p>Nunca permitas que en tu equipo se rompa la comunicación, el interés y la corresponsabilidad en el proyecto. Es muy importante que el equipo se mantenga unido y funcional. La dinámica de git sólo funciona si uno sabe lo que el otro está haciendo.</p>
+
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Checklist</span> <i class="fa-duotone fa-clipboard-list-check"></i>
+                    </div>
+                    <!-- end título -->
+                    <p>Para tu tranquilidad preparamos una lista de tareas con lo que se evaluará en este PAE.</p>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                La barra de navegación en tus archivos <span class='file'><i class='fab fa-html5'></i> <span>mi_tema.html</span></span> se ve así:
+                                <img width="100%" src="../../assets/images/paes/nav_formated.webp" style="margin-top: 0.3rem;">
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                El footer principal en tus archivos <span class='file'><i class='fab fa-html5'></i> <span>mi_tema.html</span></span> se ve así:
+                                <img width="100%" src="../../assets/images/paes/footer_flex.webp" style="margin-top: 0.3rem;">
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                El encabezado en tus artículos en tus archivos <span class='file'><i class='fab fa-html5'></i> <span>mi_tema.html</span></span> se ve así:
+                                <img width="100%" src="../../assets/images/paes/header_article.webp" style="margin-top: 0.3rem;">
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                Las entradas de microblogging en tus archivos <span class='file'><i class='fab fa-html5'></i> <span>mi_tema.html</span></span> se ven así:
+                                <img width="100%" src="../../assets/images/paes/ejemplo_aside.webp" style="margin-top: 0.3rem;">
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">5</div>
+                            <div>
+                                Cada persona creó <span class='resaltado'>una</span> entrada de formato libre.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">6</div>
+                            <div>
+                                Cada persona creó <span class='resaltado'>5</span> entradas de microblogging para cada uno de sus temas.
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                </div>
+                <!-- end Columna pequeña -->
+                <!-- Columna grande -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Previsualización</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Creamos esta previsualización de cómo debería verse tu proyecto cuando termines este PAE. </p>
+                    <p>¿Tu blog se ve así?</p>
+                    <!--	*** youtube video ***	-->
+                    <figure class="youtube">
+                        <iframe src="https://www.youtube-nocookie.com/embed/hvkGH9R3u8E?version=3&loop=1&playlist=hvkGH9R3u8E&modestbranding=1&rel=0&showinfo=0" title="video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                    </figure>
+                    <figcaption class="youtube-caption">
+                        <i class="fa-brands fa-youtube"></i> <span>Previsualización Pae 9</span>
+                    </figcaption>
+                    <!--	*** end youtube video ***	-->
+                </div>
+                <!-- end Columna grande -->
+            </div>
+            <!--	*** end 2 columns golden ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end cinco	-->
+    <!------------------------------------------------->
+
+
+    <!------------------------------------------------->
+    <!--    footer    -->
+    <!------------------------------------------------->
+    <footer>
+        <img class="logo-colegio" src="../../assets/images/colegio.webp" width='397' height='200' alt="Colegio">
+        <div class="pwr-huin">
+            <span>Powered by </span>
+            <img class="logo-huin" src="../../assets/images/logo-huin-final-blanco-(sin-solutions).webp" width='auto' height='auto' alt="Human Inspiration">
+        </div>
+    </footer>
+    <!------------------------------------------------->
+    <!--    end footer    -->
+    <!------------------------------------------------->
+
+    <!-- Materialize: Compiled and minified JavaScript -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> </script>
+    <!-- GASP 3 for animations on view -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <!-- gist-embed -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/gist-embed@1.0.4/dist/gist-embed.min.js'></script>
+    <!-- custom JS -->
+    <script src="../../assets/js/confignav_pae.min.js"></script>
+    <script src="../../assets/js/animations_pae.min.js"></script>
+    <script src="../../assets/js/parallax_image_selector.min.js"></script>
+    <script src="../../assets/js/deploy_school.min.js"></script>
+
+</body>
+
+</html>

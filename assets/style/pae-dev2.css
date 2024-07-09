@@ -1,0 +1,1722 @@
+/*###################################################*/
+/*...................................................*/
+/* root variables (responsive font size installed)   */
+/*...................................................*/
+/*###################################################*/
+
+:root {
+    /* font-size */
+    --fs-b: 14px;
+
+    /* variable Colors */
+    --background: #121212;
+    --background-mono: #1e2020;
+    --text: #d8cdcd;
+    --primary: #fa6a05;
+    --primary-mono: #FA9D5A;
+    --contrast: #1550AD;
+    --contrast-mono: #A2C4FA;
+
+    --dev1: #ee2727;
+    --dev1-mono: #d54e4e;
+    --dev2: #34c227;
+    --dev2-mono: #4ca944;
+    --dev3: #386de8;
+    --dev3-mono: #5c7ecf;
+
+    /* cambiar para cambiar tema */
+    --dev: #34c227;
+    --dev-mono: #4ca944;
+
+    --nav-height: 11vh;
+
+}
+
+/* tablet up */
+@media (min-width: 768px) {
+    :root {
+        /* font-size */
+        --fs-b: 16px;
+    }
+}
+
+/* end tablet up */
+
+/* laptop up */
+@media (min-width: 1279px) {
+    :root {
+        /* font-size */
+        --fs-b: 18px;
+    }
+}
+
+/* end laptop up */
+
+/* desktop up */
+@media (min-width: 1300px) {
+    :root {
+        /* font-size */
+        --fs-b: 22px;
+    }
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end root variables                                */
+/*...................................................*/
+/*###################################################*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* general properties                                */
+/*...................................................*/
+/*###################################################*/
+
+html {
+    /* scroll smooth from nav control */
+    scroll-behavior: smooth;
+    /* font size general control using variable */
+    font-size: var(--fs-b);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+    /* compensar el scroll por la altura de la nav */
+    scroll-padding-top: var(--nav-height);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+
+/*-------------------------------*/
+/* margins */
+/*-------------------------------*/
+.m-0 {
+    margin: 0;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+.m-2 {
+    margin: 2rem;
+}
+
+.m-3 {
+    margin: 3rem;
+}
+
+.m-4 {
+    margin: 4rem;
+}
+
+/* ---top--- */
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+/* ---end top--- */
+
+/* ---bottom--- */
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
+
+/* ---end bottom--- */
+
+/* ---left--- */
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.ml-2 {
+    margin-left: 2rem;
+}
+
+.ml-3 {
+    margin-left: 3rem;
+}
+
+.ml-4 {
+    margin-left: 4rem;
+}
+
+/* ---end left--- */
+
+/* ---right--- */
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.mr-2 {
+    margin-right: 2rem;
+}
+
+.mr-3 {
+    margin-right: 3rem;
+}
+
+.mr-4 {
+    margin-right: 4rem;
+}
+
+/* ---end right--- */
+
+/*-------------------------------*/
+/* end margins */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* paddings */
+/*-------------------------------*/
+
+.p-0 {
+    padding: 0;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.p-4 {
+    padding: 4rem;
+}
+
+/* ---top--- */
+.pt-1 {
+    padding-top: 1rem;
+}
+
+.pt-2 {
+    padding-top: 2rem;
+}
+
+.pt-3 {
+    padding-top: 3rem;
+}
+
+.pt-4 {
+    padding-top: 4rem;
+}
+
+/* ---end top--- */
+
+/* ---bottom--- */
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
+.pb-2 {
+    padding-bottom: 2rem;
+}
+
+.pb-3 {
+    padding-bottom: 3rem;
+}
+
+.pb-4 {
+    padding-bottom: 4rem;
+}
+
+/* ---end bottom--- */
+
+/* ---left--- */
+.pl-1 {
+    padding-left: 1rem;
+}
+
+.pl-2 {
+    padding-left: 2rem;
+}
+
+.pl-3 {
+    padding-left: 3rem;
+}
+
+.pl-4 {
+    padding-left: 4rem;
+}
+
+/* ---end left--- */
+
+/* ---right--- */
+.pr-1 {
+    padding-right: 1rem;
+}
+
+.pr-2 {
+    padding-right: 2rem;
+}
+
+.pr-3 {
+    padding-right: 3rem;
+}
+
+.pr-4 {
+    padding-right: 4rem;
+}
+
+/* ---end right--- */
+
+/*-------------------------------*/
+/* end paddings */
+/*-------------------------------*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* end general properties                            */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* responsive container */
+/*...................................................*/
+/*###################################################*/
+
+.responsive-container {
+    max-width: 1824px;
+    margin: 0 auto !important;
+    padding: 0 1.5rem;
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    .responsive-container {
+        padding: 0 2rem;
+        /* for iphone notch */
+        padding-left: calc(2rem + env(safe-area-inset-left));
+    }
+}
+
+/* end cellphone landscape up */
+
+/*###################################################*/
+/*...................................................*/
+/* end responsive container */
+/*...................................................*/
+/*###################################################*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* nav */
+/*...................................................*/
+/*###################################################*/
+
+/*-------------------------------*/
+/* general */
+/*-------------------------------*/
+nav {
+    /* layout */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-mono);
+    z-index: 50;
+    height: var(--nav-height) !important;
+    opacity: 0;
+
+    /*  Position*/
+    position: fixed;
+    top: 0;
+
+    /* look */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    box-shadow: none;
+}
+
+/*-------------------------------*/
+/* end general */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* logo */
+/*-------------------------------*/
+
+.dev2-logo,
+.dev3-logo,
+.dev1-logo {
+    width: 7.3rem;
+    height: auto;
+}
+
+.logo-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+/*-------------------------------*/
+/* end logo */
+/*-------------------------------*/
+
+
+/*-------------------------------*/
+/* menu */
+/*-------------------------------*/
+
+.nav-style {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav-style>li>a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin-left: 1rem;
+    height: 100%;
+}
+
+/* numeros en el menu */
+.num-nav {
+    color: var(--dev-mono);
+    font-size: 2rem;
+    --fa-primary-color: white;
+    --fa-secondary-color: var(--dev-mono);
+}
+
+/* --numeros en hover-- */
+.nav-style>li>a:hover {
+    font-weight: 200;
+    height: 100%;
+    color: white;
+    padding: 0 1rem;
+    background-color: var(--dev-mono);
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .nav-style>li>a:hover {
+        font-size: 1.3rem;
+    }
+
+    .nav-style>li:hover {
+        height: 100%;
+        width: 100%;
+        margin: 2.5rem;
+    }
+}
+
+/* end tablet up */
+.nav-style>li:hover {
+    height: 100%;
+    width: 100%;
+}
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .nav-style>li>a {
+        font-weight: 100;
+    }
+
+    /* El texto aparece y desaparece con hover */
+    .topic {
+        display: none;
+        margin-left: 0.2rem;
+    }
+
+    .nav-style li a:hover>.topic {
+        display: inline-block;
+    }
+
+    .nav-style li a:hover>.num-nav {
+
+        --fa-primary-color: white;
+        --fa-secondary-color: white;
+
+    }
+
+    .num-nav {
+        margin-top: 0.3rem;
+    }
+}
+
+/* end cellphone landscape up */
+
+/* --end numeros en hover-- */
+
+/* --active-- */
+a.active .num-nav {
+    font-size: 3rem;
+    --fa-primary-color: white;
+    --fa-secondary-color: white;
+}
+
+.sidenav a.active svg,
+.sidenav a.active span {
+    color: var(--dev2-mono);
+    font-size: 2rem;
+}
+
+/* --------- side nav --------- */
+
+#mobile-demo {
+    background-color: var(--background-mono);
+    height: calc(100% - var(--nav-height));
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 0.5rem;
+    padding-top: 1.3rem;
+    top: var(--nav-height);
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+}
+
+#mobile-demo .close-card {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding-left: 0.3rem;
+}
+
+
+#mobile-demo ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 1.3rem;
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+#mobile-demo a {
+    font-size: 1.2rem;
+    width: 100%;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#mobile-demo a:hover {
+    font-size: 2rem;
+}
+
+#mobile-demo .user-nav-container {
+    margin-top: auto;
+    font-size: 1.5rem;
+}
+
+#mobile-demo .num-nav {
+    color: var(--dev2-mono);
+    font-size: 2rem;
+    --fa-primary-color: white;
+    --fa-secondary-color: white;
+}
+
+.topic {
+    margin: 0 0.5rem;
+}
+
+/* --------- end side nav --------- */
+
+
+
+
+/*-------------------------------*/
+/* end menu */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* user */
+/*-------------------------------*/
+
+.user-nav-container {
+    margin-right: 1rem;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .user-nav-container {
+        font-size: 1.7rem;
+    }
+}
+
+/* end tablet up */
+
+#userDropdown {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 4rem;
+
+    top: -56.6094px;
+    background-color: rgba(177, 168, 168, 0.906);
+    width: auto !important;
+    height: auto !important;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+}
+
+/*-------------------------------*/
+/* end user */
+/*-------------------------------*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* end nav */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* cover */
+/*...................................................*/
+/*###################################################*/
+
+/*-------------------------------*/
+/* general */
+/*-------------------------------*/
+.cover {
+    background-color: var(--background-mono);
+    height: 100vh;
+}
+
+.cover .responsive-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* Top: para no tapar el contenido con la nav, 
+    Bottom:para que la flecha de "continuar" se vea */
+    padding: var(--nav-height) 2rem 6rem 2rem;
+}
+
+/* laptop up */
+@media (min-width: 1279px) {
+    .cover .responsive-container {
+        /* corrige en desktop el problema del padding exagerado */
+        padding-bottom: 2rem;
+    }
+}
+
+/* end laptop up */
+
+/*-------------------------------*/
+/* end general */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* títulos */
+/*-------------------------------*/
+.cover header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-weight: 200;
+    opacity: 0;
+}
+
+header #titulo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+header #titulo span {
+    text-align: center;
+    width: auto;
+
+}
+
+header #titulo svg {
+    color: var(--dev-mono);
+}
+
+/*-------------------------------*/
+/* end títulos */
+/*-------------------------------*/
+
+
+
+/*-------------------------------*/
+/* temas */
+/*-------------------------------*/
+
+#temas {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    min-width: 100%;
+    font-size: 1.2rem;
+    gap: 10px;
+    opacity: 0;
+}
+
+#temas .fa-book-open-reader {
+    color: var(--dev-mono);
+}
+
+.texto-temas {
+    margin: 0 0 0 0;
+    line-height: 0;
+
+}
+
+.pill {
+    display: inline;
+    color: #fff;
+    background-color: var(--dev-mono);
+    font-size: .9rem;
+    margin: 0 0 0 0;
+    padding: 2px 5px;
+    border-radius: 5px;
+    white-space: 1 nowrap;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    white-space: nowrap;
+}
+
+/*-------------------------------*/
+/* end temas */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* objetivo */
+/*-------------------------------*/
+#objetivo {
+    opacity: 0;
+}
+
+#objetivo .objetivo_titulo {
+    font-size: 1.2rem;
+}
+
+#objetivo .objetivo_titulo svg {
+    color: var(--dev-mono);
+}
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    #objetivo {
+        padding: 0 3rem;
+    }
+}
+
+/* end tablet up */
+/*-------------------------------*/
+/* end objetivo */
+/*-------------------------------*/
+
+.continue {
+    font-size: 3rem;
+    color: var(--dev-mono);
+    opacity: 0;
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end cover */
+/*...................................................*/
+/*###################################################*/
+
+/*-------------------------------*/
+/* quote */
+/*-------------------------------*/
+
+#quote {
+    height: clamp(10rem, 10rem, auto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.quoteText {
+    font-weight: 200;
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.quoteText svg {
+    font-size: 1.7rem;
+    color: var(--dev-mono);
+    margin: 0 0.4rem;
+}
+
+#quote .autor {
+    font-size: 0.8rem;
+    font-weight: 100;
+
+}
+
+/*-------------------------------*/
+/* end quote */
+/*-------------------------------*/
+
+/*###################################################*/
+/*...................................................*/
+/* parallax */
+/*...................................................*/
+/*###################################################*/
+/*-------------------------------*/
+/* estructura */
+/*-------------------------------*/
+
+.parallax-container {
+    height: 19rem;
+}
+
+.image_parallax {
+    width: 100vw;
+    filter: blur(1.3px);
+    -webkit-filter: blur(1.3px);
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    .image_parallax {
+        width: 100vw;
+        filter: blur(2px) brightness(66%);
+        -webkit-filter: blur(2px) brightness(66%);
+    }
+}
+
+/* end cellphone landscape up */
+.titulo-parallax-container {
+    height: 100%;
+    padding: 4%;
+
+    display: flex;
+
+    /* ---looks--- */
+
+    background: -webkit-linear-gradient(left, var(--dev-mono), rgba(180, 180, 57, 0));
+    background: -o-linear-gradient(right, var(--dev-mono), rgba(180, 180, 57, 0));
+    background: -moz-linear-gradient(right, var(--dev-mono), rgba(180, 180, 57, 0));
+    background: linear-gradient(to right, var(--dev-mono), rgba(180, 180, 57, 0));
+
+
+
+    /* ---end looks--- */
+
+
+}
+
+/*-------------------------------*/
+/* end estructura */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* título */
+/*-------------------------------*/
+
+.titulo-parallax-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.numero-seccion {
+    /* ---estructura--- */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* ---end estructura--- */
+
+    /* ---looks--- */
+    background-color: #fff;
+    width: 3rem;
+    height: 3rem;
+    color: #000;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    /* ---end looks--- */
+
+    font-size: 2rem;
+}
+
+.titulo-seccion {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-shadow: 2px 3px 10px rgb(55, 55, 58);
+    margin-top: 0.5rem;
+    max-width: 50%;
+}
+
+/*-------------------------------*/
+/* end título */
+/*-------------------------------*/
+
+
+
+/*###################################################*/
+/*...................................................*/
+/* end parallax */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* columns */
+/*...................................................*/
+/*###################################################*/
+
+/*-------------------------------*/
+/* two columns */
+/*-------------------------------*/
+
+.twoColumns {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+}
+
+/*  tablet landscape up */
+@media (min-width: 1024px) {
+    .twoColumns {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-rows: auto;
+        gap: 2rem;
+    }
+}
+
+/* end tablet landscape up */
+
+/*-------------------------------*/
+/* end two columns */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* two columns Golden */
+/*-------------------------------*/
+
+.twoColumnsGolden {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 1rem;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .twoColumnsGolden {
+        display: grid;
+        grid-template-columns: 1fr 1.61803fr;
+        grid-auto-rows: auto;
+        gap: 2rem;
+    }
+}
+
+/* end tablet up */
+
+/*-------------------------------*/
+/* end two columns Golden */
+/*-------------------------------*/
+
+
+
+
+/*###################################################*/
+/*...................................................*/
+/* end columns */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* PAE Elements */
+/*...................................................*/
+/*###################################################*/
+
+/*-------------------------------*/
+/* texts */
+/*-------------------------------*/
+.concepto {
+    font-style: italic;
+    color: rgb(0, 102, 255);
+    display: inline-block;
+}
+
+.verbo {
+    color: rgb(255, 38, 0);
+    display: inline-block;
+}
+
+/* ---especiales--- */
+.listaElement .verbo {
+    color: rgb(147, 29, 8);
+}
+
+/* ---end especiales--- */
+
+.resaltado {
+    color: rgb(234, 255, 0);
+    display: inline-block;
+    --animate-repeat: 4;
+}
+
+
+/*-------------------------------*/
+/* end texts */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* more info */
+/*-------------------------------*/
+
+
+.more-info {
+    font-size: 1.5rem;
+    color: var(--primary-mono);
+}
+
+/* ---especiales--- */
+.listaElement .more-info {
+    color: var(--contrast);
+}
+
+/* ---end especiales--- */
+
+/* rewrite materialize */
+.material-tooltip {
+    background-color: var(--primary-mono);
+
+    color: #000;
+    border: 1px solid white;
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+}
+
+/*-------------------------------*/
+/* end more info */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* collapsible */
+/*-------------------------------*/
+
+.collapsible-standard {
+    border: none;
+    background-color: var(--background);
+    box-shadow: none;
+}
+
+.collapsible-standard .collapsible-header {
+    border: none;
+    margin-top: 0.3rem;
+    border-radius: 11px 0;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px 0;
+    -ms-border-radius: 11px 0;
+    -o-border-radius: 11px 0;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+}
+
+.collapsible-standard .collapsible-body {
+    border: none;
+    padding: 0.3rem 0;
+}
+
+/*-------------------------------*/
+/* end collapsible */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* collapsible tip*/
+/*-------------------------------*/
+
+.collapsible-tip {
+    border: none;
+    background-color: var(--background);
+    box-shadow: none;
+}
+
+.collapsible-tip li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.collapsible-tip .collapsible-header {
+    width: fit-content;
+
+    border: none;
+    margin-top: 0.3rem;
+    border-radius: 11px 0;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px 0;
+    -ms-border-radius: 11px 0;
+    -o-border-radius: 11px 0;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+}
+
+.collapsible-tip .collapsible-body {
+    margin-top: 0.5rem;
+    background-color: var(--primary-mono);
+    border: none;
+    padding: 0.8rem;
+    color: #000;
+
+    border-radius: 11px 0;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px 0;
+    -ms-border-radius: 11px 0;
+    -o-border-radius: 11px 0;
+}
+
+/*-------------------------------*/
+/* end collapsible tip */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* collapsible respuesta*/
+/*-------------------------------*/
+
+.collapsible-respuesta {
+    border: none;
+    background-color: var(--background);
+    box-shadow: none;
+}
+
+.collapsible-respuesta li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.collapsible-respuesta .collapsible-header {
+    width: fit-content;
+    border: none;
+    margin-top: 0.3rem;
+    border-radius: 11px 0;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px 0;
+    -ms-border-radius: 11px 0;
+    -o-border-radius: 11px 0;
+    background-color: var(--primary-mono);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--background-mono);
+}
+
+.collapsible-respuesta .collapsible-body {
+    width: 100%;
+    margin-top: 0.5rem;
+    border: none;
+    padding: 0;
+}
+
+/*-------------------------------*/
+/* end collapsible respuesta */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* lista */
+/*-------------------------------*/
+.lista {
+    border: none;
+}
+
+.lista li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.6rem;
+    border: none;
+    background-color: var(--primary);
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+
+}
+
+.listaElement {
+    opacity: 0;
+}
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+
+    .lista li {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        font-size: 0.8rem;
+
+    }
+}
+
+/* end tablet up */
+
+.lista li:first-child {
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+.lista li:last-child {
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+
+.lista li:nth-child(2n) {
+    background-color: var(--primary-mono);
+    color: var(--background-mono);
+}
+
+.lista li:nth-child(2n) .list-num {
+    color: var(--text);
+}
+
+/* ---numeros--- */
+
+.lista li .list-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.3rem;
+    background-color: var(--background);
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+
+    .lista li .list-num {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.3rem;
+    }
+}
+
+/* end tablet up */
+
+
+/* ---end numeros--- */
+
+/*-------------------------------*/
+/* end lista */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* youtube */
+/*-------------------------------*/
+.youtube {
+    background-color: var(--background-mono);
+    border: 10px solid var(--background-mono);
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+    margin: 0;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+.youtube iframe,
+.youtube object,
+.youtube embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.youtube-caption {
+    background-color: var(--background-mono);
+    margin-top: 0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+
+/*-------------------------------*/
+/* end youtube */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* btn-out */
+/*-------------------------------*/
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-out {
+    background-color: var(--primary);
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    padding: 0.5rem;
+    color: var(--text);
+    font-size: 1.2rem;
+
+}
+
+.btn:hover {
+    background-color: var(primary-mono) !important;
+}
+
+/*-------------------------------*/
+/* end btn-out */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* título */
+/*-------------------------------*/
+
+.section-title {
+    margin: 1rem 0;
+    padding-bottom: 0.2rem;
+
+    font-size: 1.7rem;
+    border-bottom: 2px solid var(--dev-mono);
+}
+
+.section-title svg {
+    color: var(--dev-mono);
+}
+
+/*-------------------------------*/
+/* end título */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* users */
+/*-------------------------------*/
+.user-cero {
+    padding: 0.2rem 0.3rem;
+    background-color: rgb(133, 6, 176);
+    border-radius: 11px;
+    font-size: 1.2rem;
+    color: rgb(220, 213, 213);
+
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+
+}
+
+.user-one {
+    padding: 0.2rem 0.3rem;
+    background-color: teal;
+    border-radius: 11px;
+    font-size: 1.2rem;
+    color: rgb(220, 213, 213);
+
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+
+}
+
+.indirect {
+    opacity: 0.5;
+    font-size: 1rem;
+}
+
+/*-------------------------------*/
+/* end users */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* horizontal divider */
+/*-------------------------------*/
+.horizontal-divider {
+
+    border-color: var(--background-mono);
+    margin: 4rem 0;
+    opacity: 0;
+}
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .horizontal-divider {
+        opacity: 1;
+    }
+}
+
+/*-------------------------------*/
+/* end horizontal divider */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* important */
+/*-------------------------------*/
+
+.important {
+    width: 100%;
+    height: auto;
+    background-color: var(--dev-mono);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+}
+
+.important .fa-square-exclamation {
+    font-size: 2rem;
+    margin-right: 0.3rem;
+}
+
+/*-------------------------------*/
+/* end important */
+/*-------------------------------*/
+
+/*###################################################*/
+/*...................................................*/
+/* end PAE elements */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/*  code elements */
+/*...................................................*/
+/*###################################################*/
+
+.terminal {
+    background-color: var(--background-mono);
+    padding: 0.3rem;
+    display: block;
+    color: var(--text);
+
+}
+
+/*-------------------------------*/
+/* files, html, css, inline code */
+/*-------------------------------*/
+
+.file {
+    background-color: rgb(27, 25, 25);
+    padding: 0.3rem;
+    padding-bottom: 0.1rem;
+    border: 0.5px dashed #fff;
+    font-size: 0.7rem;
+    color: #fff;
+    white-space: nowrap;
+
+}
+
+.file>.fa-html5 {
+    color: rgb(93, 139, 199);
+    font-size: 0.9rem;
+}
+
+.file>.fa-css3-alt {
+    color: rgb(223, 25, 25);
+    font-size: 0.9rem;
+}
+
+.file>.fa-folder {
+    color: rgb(235, 132, 48);
+    font-size: 0.9rem;
+}
+
+.tag-html {
+    background-color: rgb(255, 254, 254);
+    padding: 0.2rem;
+    border: 0.5px dashed rgb(38, 98, 138);
+    font-size: 0.9rem;
+    color: rgb(38, 98, 138);
+    white-space: nowrap;
+
+}
+
+.prop-css {
+    background-color: rgb(255, 254, 254);
+    padding: 0.2rem;
+    border: 0.5px dashed rgb(38, 98, 138);
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+
+}
+
+.prop-value {
+    color: rgb(236, 12, 12);
+}
+
+.prop-name {
+    color: rgb(132, 17, 143);
+}
+
+/*-------------------------------*/
+/* end files, html, css, inline code */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* code display title bars */
+/*-------------------------------*/
+
+.title-bar-css {
+    background-color: rgb(117, 13, 13);
+    color: #fff;
+    margin-top: 1rem;
+    padding: 0.3rem;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+.title-bar-html {
+    background-color: rgb(13, 41, 117);
+    color: #fff;
+    margin-top: 1rem;
+    padding: 0.3rem;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+.title-bar-js {
+    background-color: rgb(160, 125, 10);
+    color: #fff;
+    margin-top: 1rem;
+    padding: 0.3rem;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+
+/*-------------------------------*/
+/* end code display title bars */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* no copy code */
+/*-------------------------------*/
+
+.forbidden {
+    cursor: not-allowed;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+/*-------------------------------*/
+/* end no copy code */
+/*-------------------------------*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* end code elements */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* code files group */
+/*...................................................*/
+/*###################################################*/
+
+.menu_archivos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--primary);
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    height: auto;
+}
+
+.menu_archivos a {
+    color: var(--text) !important;
+    text-transform: none;
+}
+
+.close_menu {
+    margin-left: auto !important;
+}
+
+.close_menu a {
+    font-size: 1.5rem !important;
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end code files group */
+/*...................................................*/
+/*###################################################*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* footer */
+/*...................................................*/
+/*###################################################*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 2rem;
+    opacity: 0;
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    footer {
+        flex-direction: row;
+        margin-top: 4rem;
+    }
+}
+
+/* end cellphone landscape up */
+footer .pwr-huin {
+    /* layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.pwr-huin span {
+    width: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+footer .logo-huin {
+    height: 3.2rem;
+    margin-left: 0.7rem;
+    padding-bottom: 0.5rem;
+
+}
+
+footer .logo-colegio {
+    width: 8rem;
+    height: auto;
+
+
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end footer */
+/*...................................................*/
+/*###################################################*/

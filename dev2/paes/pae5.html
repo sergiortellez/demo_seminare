@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
+    <meta name="theme-color" content="#1e2020">
+
+    <title>PAE 5 | Seminare</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Materialize: Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- FontAwesome -->
+    <script data-search-pseudo-elements defer src="https://kit.fontawesome.com/b485de8470.js" crossorigin="anonymous"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel='stylesheet' href='../../assets/style/gist.min.css'>
+    <link rel="stylesheet" href="../../assets/style/pae-dev2.min.css">
+    <link rel="stylesheet" href="../../assets/style/paes/semana5.min.css">
+
+    <!-- Fav icon -->
+    <link rel='apple-touch-icon' sizes='180x180' href='../../assets/images/favicon/apple-touch-icon.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='../../assets/images/favicon/favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='16x16' href='../../assets/images/favicon/favicon-16x16.png'>
+    <link rel='manifest' href='../../assets/images/favicon/site.webmanifest'>
+
+</head>
+
+<body>
+    <!------------------------------------------------->
+    <!--    navbar    -->
+    <!------------------------------------------------->
+
+    <nav>
+        <!--  *** logo *** -->
+        <a href="../../dev2.html" class="logo-nav-container">
+            <img class="dev2-logo" src="../../assets/images/dev2-logo.svg" alt="DEV2">
+        </a>
+        <!--  *** end logo *** -->
+
+        <!--  *** menu ***  -->
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fad fa-bars fa-2x"></i></a> <!-- mobil menu -->
+        <ul class="hide-on-med-and-down nav-style">
+            <li>
+                <a href="#cero">
+                    <i class="fa-duotone fa-square-0 num-nav "></i>
+                    <span class="topic">
+                        Antes de empezar
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#uno">
+                    <i class="fa-duotone fa-square-1 num-nav"></i>
+                    <span class="topic">
+                        footer
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#dos">
+                    <i class="fa-duotone fa-square-2 num-nav "></i>
+                    <span class="topic">
+                        Investigación y estadísticas
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#tres">
+                    <i class="fa-duotone fa-square-3 num-nav "></i>
+                    <span class="topic">
+                        Entrega tu trabajo
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#cover">
+                    <i class="fa-duotone fa-square-up num-nav"></i>
+                </a>
+            </li>
+
+        </ul>
+        <!--  *** end menu ***  -->
+
+        <!--  *** user ***  -->
+        <div class="user-nav-container hide-on-med-and-down dropdown-trigger" data-target="userDropdown">
+            <i class="fa-duotone fa-image-user"></i>
+        </div>
+        <!--  *** end user ***  -->
+    </nav>
+
+    <!-- side nav structure -->
+    <div class="sidenav" id="mobile-demo">
+        <div class="close-card">
+            <i class="fa-duotone fa-ellipsis-vertical"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="#cero" class="sidenav-close">
+                    <i class="fa-duotone fa-square-0 num-nav "></i>
+                    <span class="topic">
+                        Antes de empezar
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#uno" class="sidenav-close">
+                    <i class="fa-duotone fa-square-1 num-nav "></i>
+                    <span class="topic">
+                        footer
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#dos" class="sidenav-close">
+                    <i class="fa-duotone fa-square-2 num-nav "></i>
+                    <span class="topic">
+                        Investigación y estadísticas
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#tres" class="sidenav-close">
+                    <i class="fa-duotone fa-square-3 num-nav "></i>
+                    <span class="topic">
+                        Entrega tu trabajo
+                    </span>
+                </a>
+            </li>
+
+            <!--  *** user ***  -->
+            <div class="user-nav-container">
+                <div><i class="fa-duotone fa-image-user"></i> Nombre del Alumno</div>
+                <hr>
+                <div class="colegio"></div>
+            </div>
+            <!--  *** end user ***  -->
+        </ul>
+    </div>
+
+    <!-- Dropdown Structure -->
+    <div id="userDropdown" class="dropdown-content">
+        <div>Nombre del Alumno</div>
+        <hr>
+        <div class="colegio"></div>
+    </div>
+
+
+
+    <!------------------------------------------------->
+    <!--    end navbar    -->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--    cover    -->
+    <!------------------------------------------------->
+    <section class="cover" id="cover">
+        <div class="responsive-container">
+            <header>
+                <div #id="numero">
+                    <span>PAE </span><span>5</span>
+                </div>
+                <div id="titulo">
+                    <i class="fa-duotone fa-quote-left"></i>
+                    <span>Etiquetas especiales</span>
+                    <i class="fa-duotone fa-quote-right"></i>
+                </div>
+            </header>
+
+            <div id="temas">
+                <div><i class="fa-duotone fa-book-open-reader"></i> <span class="texto-temas">Temas:</span></div>
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> Formato de texto</span>
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> Citas y referencias</span>
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> Estadísticas</span>
+
+            </div>
+            <div id="objetivo">
+                <span class="objetivo_titulo"><i class="fa-duotone fa-bullseye"></i> Objetivo:</span>
+
+                <p>En este PAE reforzarás los conocimientos que has adquirido para darle formato especial a los textos en tu proyecto, así como para hacer citas y mostrar estadísticas cuando sea necesario.</p>
+            </div>
+            <a href="#cero" id="arrowStart"><i class="fa-duotone fa-square-arrow-down continue"></i></a>
+        </div>
+
+    </section>
+    <!------------------------------------------------->
+    <!--    end cover    -->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--    quote    -->
+    <!------------------------------------------------->
+    <section id="quote">
+        <div class="quoteText">
+            <i class="fa-duotone fa-quote-left"></i>
+            Es un error pensar
+            que la práctica de mi arte se ha convertido en algo trivial para mí. Te aseguro, querido amigo, nadie le ha dedicado tanto cuidado al estudio de la composición musical como lo he hecho yo. Existen pocos maestros en música cuyo trabajo no he estudiado con frecuencia y diligencia.
+            <i class="fa-duotone fa-quote-right"></i>
+        </div>
+        <p class="autor">--Wolfgang Amadeus Mozart</p>
+    </section>
+    <!------------------------------------------------->
+    <!--    end quote    -->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	cero	-->
+    <!------------------------------------------------->
+    <div class='scrollspy' id='cero'>
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>0</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Antes de empezar</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-3 mb-3">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Atajos...</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Este será el último PAE que resolverás de HTML, estamos a la mitad del camino. Has trabajado bien y te has ganado el derecho de usar algunos trucos para crear código más fácil y rápido. </p>
+                    <p>Hasta ahora te hemos pedido que hagas <span class='concepto'>indenting</span> <a class=" tooltipped more-info" data-position="top" data-tooltip="El espaciado horizontal que muestra la jerarquía de las etiquetas"><i class='fad fa-question-square'></i></a> en tu código, y has
+                        pasado una cantidad importante de tiempo haciéndolo. </p>
+                    <p>Era importante que lo hicieras a mano porque necesitábamos que tu cerebro aprendiera a automaticamente organizar las etiquetas de manera jerárquica y distinguir qué está adentro de qué.</p>
+                    <p>Ahora que tienes suficiente práctica te presentamos algunos trucos para que tu código se alinee automáticamente y así aumentar tu productividad.</p>
+
+
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <p>No te dará automáticamente los puntos de orden en la rubrica de evaluación de los PAEs pues aún es necesario comentar el código de manera correcta, pero te ahorrará mucho tiempo.</p>
+                    <p>En el siguiente vídeo te proponemos una configuración para VCS que te hará la vida mucho más sencilla.</p>
+                    <!-- collapsible -->
+                    <ul class="collapsible collapsible-standard">
+                        <li class="">
+                            <div class="collapsible-header waves-effect waves-light">
+                                <span>Tunea VCS</span>
+                            </div>
+                            <div class="collapsible-body">
+                                <!-- cuerpo  -->
+                                <!--	*** youtube video ***	-->
+                                <figure class="youtube">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/eqB8bNB5_-Y?version=3&loop=1&playlist=eqB8bNB5_-Y&modestbranding=1&rel=0&showinfo=0" title="video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+
+                                </figure>
+                                <figcaption class="youtube-caption">
+                                    <i class="fa-brands fa-youtube"></i> <span>Tunea VCS y ahorra mucho tiempo.</span>
+                                </figcaption>
+                                <!--	*** end youtube video ***	-->
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end collapsible -->
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end cero	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	uno	-->
+    <!------------------------------------------------->
+    <div class='scrollspy' id='uno'>
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>1</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Footer</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-3 mb-3">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Footer de entradas</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Hasta ahora hemos dejado en blanco los footer de cada uno de nuestros artículos. Es hora de darles contenido.</p>
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> Para cada una de tus entradas, en cada uno de tus temas (2 por persona 4 en total) <span class='verbo'>localiza</span> el footer y <span
+                            class='verbo'>añade</span> dos etiquetas
+                        en el mismo nivel; un
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>div</b><i class='fas fa-chevron-right'></i></span> que albergará el nombre del autor con un enlace a la red social donde puede ser localizado y un <span class='tag-html'><i
+                                class='fas fa-chevron-left'></i><b>blockquote</b><i class='fas fa-chevron-right'></i></span> con la referencia (bibliografía) de donde surgió la investigación para hacer el artículo. </p>
+                    <p>Asegúrate de cumplir los siguientes requisitos:</p>
+
+
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                <span class='verbo'>Investiga</span> cómo son los enlaces a los perfiles en la red social que escogiste, en Instagram por ejemplo, tienen la forma:
+                                <code class="terminal">https://www.instagram.com/nombrepersona/</code>
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                El enlace al perfil del autor debe abrirse en una nueva página.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                <span class='verbo'>Pegunta</span> a tu profesor de Lengua Española cuál es la manera correcta de escribir bibliografía en tus entradas. No olvides preguntar cómo referirse a páginas web, videos u otros contenidos en internet. Usa esta habilidad para escribir la
+                                bibliografía correcta dentro de <span class='tag-html'><i class='fas fa-chevron-left'></i><b>blockquote</b><i class='fas fa-chevron-right'></i></span>.
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+            <hr class="horizontal-divider">
+            <!-- título -->
+            <div class="section-title" id="estructura_entrada">
+                <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Nueva estructura de entrada</span>
+            </div>
+            <p>Nuevamente la estructura de entrada oficial ha cambiado, esta vez incluye en todas tus entradas el <span class='tag-html'><i class='fas fa-chevron-left'></i><b>footer</b><i class='fas fa-chevron-right'></i></span> como te proponemos en el código de ejemplo: </p>
+            <!-- end título -->
+
+            <!--Inicia HTML Desplegado-->
+            <div class='title-bar-html'>HTML <span class='fab fa-html5'></span></div>
+            <code data-gist-id='3c8e37ba6fc6c32764960f857a6e0599' data-gist-hide-footer='true' data-gist-highlight-line='27,28,29,30,31,32,33,34,35,36,37,38'></code>
+            <!--Termina HTML Desplegado-->
+            <hr class="horizontal-divider">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-3 mb-3">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>footer del blog</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Igualmente hasta ahora habíamos dejado vacío el footer de nuestro blog. Usaremos este espacio para añadir los nombres de las personas que colaboran en este proyecto, así como una pequeña leyenda que indica que nuestras opiniones no representan a la escuela a la que
+                        pertenecemos.</p>
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> Para cada uno de sus temas de blog <span class='verbo'>localiza</span> el <span class='tag-html'><i class='fas fa-chevron-left'></i><b>footer</b><i
+                                class='fas fa-chevron-right'></i></span> del blog y añade dentro <span class='resaltado'>tres</span> etiquetas <span class='tag-html'><i class='fas fa-chevron-left'></i><b>div</b><i class='fas fa-chevron-right'></i></span> en el mismo nivel.</p>
+                    <p>Usa estos puntos como guía para llenar el footer de tu blog:</p>
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                En el <span class='resaltado'>primer</span> <span class='tag-html'><i class='fas fa-chevron-left'></i><b>div</b><i class='fas fa-chevron-right'></i></span> Usa un <span class='tag-html'><i class='fas fa-chevron-left'></i><b>span</b><i
+                                        class='fas fa-chevron-right'></i></span> para escribir el nombre completo de <span class="user-cero">0: <i class='fak fa-user-0'></i></span>.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                En el <span class='resaltado'>segundo</span> <span class='tag-html'><i class='fas fa-chevron-left'></i><b>div</b><i class='fas fa-chevron-right'></i></span> Usa un <span class='tag-html'><i class='fas fa-chevron-left'></i><b>span</b><i
+                                        class='fas fa-chevron-right'></i></span> para escribir la leyenda:
+                                <code class="terminal" style="margin-top:0.3rem; margin-bottom:0.3rem">Blog creado en «nombre de tu colegio». </code>
+                                Usa <span class='tag-html'><i class='fas fa-chevron-left'></i><b>i</b><i class='fas fa-chevron-right'></i></span> para que el nombre del colegio aparezca en itálicas.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                En el <span class='resaltado'>segundo</span> <span class='tag-html'><i class='fas fa-chevron-left'></i><b>div</b><i class='fas fa-chevron-right'></i></span> Usa otro <span class='tag-html'><i class='fas fa-chevron-left'></i><b>span</b><i
+                                        class='fas fa-chevron-right'></i></span> para escribir la leyenda:
+                                <code class="terminal" style="margin-top:0.3rem;">Las opiniones contenidas en este proyecto pertenecen a los autores de cada entrada. </code>
+                            </div>
+                        </li>
+                        <li class=" listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                En el <span class='resaltado'>tercer</span> <span class='tag-html'><i class='fas fa-chevron-left'></i><b>div</b><i class='fas fa-chevron-right'></i></span> Usa un <span class='tag-html'><i class='fas fa-chevron-left'></i><b>span</b><i
+                                        class='fas fa-chevron-right'></i></span> para escribir el nombre completo de <span class="user-one">1: <i class='fak fa-user-1'></i></span>.
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end uno	-->
+    <!------------------------------------------------->
+    <!------------------------------------------------->
+    <!--	dos	-->
+    <!------------------------------------------------->
+    <div class='scrollspy' id='dos'>
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>2</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Investigación y estadísticas</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-3 mb-3">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title" id="investigacion">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Sustentando tus opiniones.</span>
+                    </div>
+                    <!-- end título -->
+                    <p>En las próximas entradas te pediremos que escribas tu opinión de manera libre de algunos subtemas de cada uno de tus temas, pero antes de hacerlo debes aprender a investigar.</p>
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> para cada uno de tus temas (2 por persona 4 en total) crearán una <span class='resaltado'>nueva entrada</span>. No olvides respetar la estructura de
+                        entrada <a href="#estructura_entrada"><i class="fa-duotone fa-link"></i></a>. </p>
+                    <p>El título de la entrada será «Investigación».</p>
+                    <p><span class='verbo'>Busca</span> <span class='concepto'>libros</span>, <span class='concepto'>revistas</span> o <span class='concepto'>sitios oficiales</span> que se especialicen en el tema que has elegido. <span class='verbo'>Nutre</span> tu
+                        conocimiento del tema consultando el material. <span class='verbo'>Anota</span> algunas citas que te parezcan interesantes. <span class='verbo'>Asegúrate</span> de encontrar algunas estadísticas y <span class='verbo'>consulta</span> diferentes autores. </p>
+
+                    <p>La siguiente lista contiene los requisitos mínimos para esta entrada:</p>
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                El contenido del artículo debe tener al menos <span class='resaltado'>3 subtítulos</span> con <span class='resaltado'>4 párrafos</span> <a class=" tooltipped more-info" data-position="top" data-tooltip="recuerda que cada párrafo debe contener de 100 a 150 palabras"><i
+                                        class='fad fa-question-square'></i></a> cada uno.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                Usa al menos <span class='resaltado'>3 citas</span> fruto de tu investigación. No olvides usar las etiquetas <span class='tag-html'><i class='fas fa-chevron-left'></i><b>cite</b><i class='fas fa-chevron-right'></i></span> y <span class='tag-html'><i
+                                        class='fas fa-chevron-left'></i><b>q</b><i class='fas fa-chevron-right'></i></span> para expresarlas correctamente.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                Usa de manera creativa la etiqueta <span class='tag-html'><i class='fas fa-chevron-left'></i><b>meter</b><i class='fas fa-chevron-right'></i></span> para expresar al menos <span class='resaltado'>dos</span> valores numéricos relevantes a tu investigación.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                Usa <span class='tag-html'><i class='fas fa-chevron-left'></i><b>strong</b><i class='fas fa-chevron-right'></i></span> para resaltar la idea principal de cada subtítulo.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">5</div>
+                            <div>
+                                Al menos el <span class='resaltado'>85%</span> del texto debe ser de tu total autoría, de lo contrario se calificará con <span class='resaltado'>cero puntos</span> el criterio de «contenido» en la rubrica del PAE.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">6</div>
+                            <div>
+                                <b>Crédito extra:</b> Si toda tu investigación proviene de <a href="https://scholar.google.com" target="_blank"">Google Scholar <i class=" fa-duotone fa-graduation-cap"></i> </a> tendrás derecho a un punto extra.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">7</div>
+                            <div>
+                                A partir de ahora, ninguna entrada será válida sin la <b>bibliografía</b> correspondiente.
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+            <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end dos	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	tres	-->
+    <!------------------------------------------------->
+    <div class='scrollspy' id='tres'>
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>3</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Entrega tu trabajo</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns golden ***	-->
+            <div class="twoColumnsGolden mt-2 mb-3">
+                <!-- Columna pequeña -->
+                <div>
+                    <p>No olviden <span class='verbo'>ejecutar</span> <span class='concepto'>add<i class='fa-brands fa-git-alt'></i></span>, <span class='concepto'>commit(con mensaje)<i class='fa-brands fa-git-alt'></i></span> y <span class='concepto'>push<i class='fa-brands fa-git-alt'></i></span>
+                        cuando hayan terminado su
+                        trabajo. </p>
+                    <p>También pueden <span class='verbo'>usar</span> </p>
+                    <code class="terminal m-1">git status</code>
+                    <p>para asegurarse de que todos los cambios han sido sincronizados. O <span class='verbo'>visitar</span> la página del repo para observar cómo tus profesores verán tus archivos. </p>
+
+                    <p>Para su tranquilidad en la entrega generamos una lista de verificación <i class='fa-duotone fa-circle-check ' style="color: green;"></i> con los requisitos de entrega de esta semana.</p>
+
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-lightbulb"></i> <span>Investigar antes de opinar</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Esta semana tal vez fue un fastidio para ti buscar, organizar, consultar y resumir mucha información seria. A pesar de ser un tema que te interesa el proceso de investigación puede ser difícil. Reflexiona cuánto aprendiste de este ejercicio. Piensa también si alguna de las
+                        opiniones que tenías en este tema cambió después de la investigación. Reflexiona también qué tan confiable es la investigación que hiciste. ¿Será que todas las personas que vierten sus opiniones en internet hacen este mínimo ejercicio de investigación?</p>
+                </div>
+                <!-- end Columna pequeña -->
+                <!-- Columna grande -->
+                <div>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num">1</div>
+                            <div>
+                                <span class='verbo'>Completaron</span> el footer de todas las entradas como se especifica en la sección 1, paso «footer de entradas»
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                <span class='verbo'>Completaron</span> el footer de cada uno de sus blogs como se especifica en la sección 1, paso «footer del blog»
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                <span class='verbo'>Crearon</span> una nueva entrada para cada tema llamada «Investigación» y completaron la lista de la sección 2, paso «Sustentando tus opiniones»
+                            </div>
+                        </li>
+
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                Sus profesores son colaboradores del repo.
+
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- end lista -->
+                </div>
+                <!-- end Columna grande -->
+            </div>
+            <!--	*** end 2 columns golden ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end tres	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--    footer    -->
+    <!------------------------------------------------->
+    <footer>
+        <img class="logo-colegio" src="../../assets/images/colegio.webp" width='397' height='200' alt="Colegio">
+        <div class="pwr-huin">
+            <span>Powered by </span>
+            <img class="logo-huin" src="../../assets/images/logo-huin-final-blanco-(sin-solutions).webp" width='auto' height='auto' alt="Human Inspiration">
+        </div>
+    </footer>
+    <!------------------------------------------------->
+    <!--    end footer    -->
+    <!------------------------------------------------->
+
+    <!-- Materialize: Compiled and minified JavaScript -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> </script>
+    <!-- GASP 3 for animations on view -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <!-- gist-embed -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/gist-embed@1.0.4/dist/gist-embed.min.js'></script>
+    <!-- custom JS -->
+    <script src="../../assets/js/confignav_pae.min.js"></script>
+    <script src="../../assets/js/animations_pae.min.js"></script>
+    <script src="../../assets/js/parallax_image_selector.min.js"></script>
+    <script src="../../assets/js/deploy_school.min.js"></script>
+
+</body>
+
+</html>

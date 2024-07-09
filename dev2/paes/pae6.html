@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
+    <meta name="theme-color" content="#1e2020">
+
+    <title>PAE 6 | Seminare</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Materialize: Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- FontAwesome -->
+    <script data-search-pseudo-elements defer src="https://kit.fontawesome.com/b485de8470.js" crossorigin="anonymous"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel='stylesheet' href='../../assets/style/gist.min.css'>
+    <link rel="stylesheet" href="../../assets/style/pae-dev2.min.css">
+    <link rel="stylesheet" href="../../assets/style/paes/semana6.min.css">
+
+    <!-- Fav icon -->
+    <link rel='apple-touch-icon' sizes='180x180' href='../../assets/images/favicon/apple-touch-icon.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='../../assets/images/favicon/favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='16x16' href='../../assets/images/favicon/favicon-16x16.png'>
+    <link rel='manifest' href='../../assets/images/favicon/site.webmanifest'>
+
+</head>
+
+<body>
+    <!------------------------------------------------->
+    <!--    navbar    -->
+    <!------------------------------------------------->
+
+    <nav>
+        <!--  *** logo *** -->
+        <a href="../../dev2.html" class="logo-nav-container">
+            <img class="dev2-logo" src="../../assets/images/dev2-logo.svg" alt="DEV2">
+        </a>
+        <!--  *** end logo *** -->
+
+        <!--  *** menu ***  -->
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fad fa-bars fa-2x"></i></a> <!-- móvil menu -->
+
+        <ul class="hide-on-med-and-down nav-style">
+            <li>
+                <a href="#cero">
+                    <i class="fa-duotone fa-square-0 num-nav "></i>
+                    <span class="topic">
+                        Checkpoint <i class="fa-duotone fa-flag-checkered"></i>
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#uno">
+                    <i class="fa-duotone fa-square-1 num-nav"></i>
+                    <span class="topic">
+                        Añade CSS
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#dos">
+                    <i class="fa-duotone fa-square-2 num-nav "></i>
+                    <span class="topic">
+                        id's y clases
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#tres">
+                    <i class="fa-duotone fa-square-3 num-nav "></i>
+                    <span class="topic">
+                        Entrada: graba un video
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#cuatro">
+                    <i class="fa-duotone fa-square-4 num-nav "></i>
+                    <span class="topic">
+                        Entrega tu trabajo
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#cover">
+                    <i class="fa-duotone fa-square-up num-nav"></i>
+                </a>
+            </li>
+
+        </ul>
+        <!--  *** end menu ***  -->
+
+        <!--  *** user ***  -->
+        <div class="user-nav-container hide-on-med-and-down dropdown-trigger" data-target="userDropdown">
+            <i class="fa-duotone fa-image-user"></i>
+        </div>
+        <!--  *** end user ***  -->
+    </nav>
+
+    <!-- side nav structure -->
+    <div class="sidenav" id="mobile-demo">
+        <div class="close-card">
+            <i class="fa-duotone fa-ellipsis-vertical"></i>
+        </div>
+
+        <ul>
+            <li>
+                <a href="#cero" class="sidenav-close">
+                    <i class="fa-duotone fa-square-0 num-nav "></i>
+                    <span class="topic">
+                        Checkpoint <i class="fa-duotone fa-flag-checkered"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#uno" class="sidenav-close">
+                    <i class="fa-duotone fa-square-1 num-nav "></i>
+                    <span class="topic">
+                        Añade CSS
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#dos" class="sidenav-close">
+                    <i class="fa-duotone fa-square-2 num-nav "></i>
+                    <span class="topic">
+                        id's y clases
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#tres" class="sidenav-close">
+                    <i class="fa-duotone fa-square-3 num-nav "></i>
+                    <span class="topic">
+                        Entrada: graba un video
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#cuatro" class="sidenav-close">
+                    <i class="fa-duotone fa-square-4 num-nav "></i>
+                    <span class="topic">
+                        Entrega tu trabajo
+                    </span>
+                </a>
+            </li>
+            <!--  *** user ***  -->
+            <div class="user-nav-container">
+                <div><i class="fa-duotone fa-image-user"></i> Nombre del Alumno</div>
+                <hr>
+                <div class="colegio"></div>
+            </div>
+            <!--  *** end user ***  -->
+        </ul>
+    </div>
+
+    <!-- Dropdown Structure -->
+    <div id="userDropdown" class="dropdown-content">
+        <div>Nombre del Alumno</div>
+        <hr>
+        <div class="colegio"></div>
+    </div>
+
+
+
+    <!------------------------------------------------->
+    <!--    end navbar    -->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--    cover    -->
+    <!------------------------------------------------->
+    <section class="cover" id="cover">
+        <div class="responsive-container">
+            <header>
+                <div #id="numero">
+                    <span>PAE </span><span>6</span>
+                </div>
+                <div id="titulo">
+                    <i class="fa-duotone fa-quote-left"></i>
+                    <span>Intro a CSS</span>
+                    <i class="fa-duotone fa-quote-right"></i>
+                </div>
+            </header>
+
+            <div id="temas">
+                <div><i class="fa-duotone fa-book-open-reader"></i> <span class="texto-temas">Temas:</span></div>
+
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> CSS</span>
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> Palabra clave</span>
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> id</span>
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> class</span>
+                <span class="pill"> <i class="fa-duotone fa-hashtag"> </i> Anatomía de las propiedades</span>
+            </div>
+            <div id="objetivo">
+                <span class="objetivo_titulo"><i class="fa-duotone fa-bullseye"></i> Objetivo:</span>
+
+                <p>En este PAE practicarás la aplicación de estilos usando CSS en un archivo independiente mediante apuntadores de palabra clave, clases e id's. </p>
+            </div>
+            <a href="#cero" id="arrowStart"><i class="fa-duotone fa-square-arrow-down continue"></i></a>
+        </div>
+
+
+    </section>
+    <!------------------------------------------------->
+    <!--    end cover    -->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--    quote    -->
+    <!------------------------------------------------->
+    <section id="quote">
+        <div class="quoteText">
+            <i class="fa-duotone fa-quote-left"></i>
+
+            There is no exquisite beauty… without some strangeness in the proportion.
+            <i class="fa-duotone fa-quote-right"></i>
+        </div>
+        <p class="autor">--Edgar Allan Poe</p>
+    </section>
+    <!------------------------------------------------->
+    <!--    end quote    -->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	cero	-->
+    <!------------------------------------------------->
+    <div class='scrollspy' id='cero'>
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>0</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto"> Checkpoint <i class="fa-duotone fa-flag-checkered"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-4 mb-2">
+                <!--  primer columna -->
+                <div>
+                    <p>Has llegado a un punto en el proyecto «El blog del mundo» donde conviene asegurarnos de que tu código está bien estructurado. Aprovecha esta oportunidad para verificar <span class='resaltado'>línea a línea</span> a tu código y compáralo con el código muestra. Esto te ahorrará
+                        muchos problemas al aplicar tus
+                        id's y clases. </p>
+                    <p>
+                        Si te falta alguna carpeta o algún archivo está fuera de lugar es momento de darle orden al sistema de archivos. Comunícate con las personas de tu equipo cuando vayas a hacer algún cambio. Es importante coordinarse. Recuerda que las carpetas que están vacías no se guardan en
+                        el servidor del repo, tal vez tengas que agregar la carpeta «styles» nuevamente.
+                    </p>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>file-ing <i class="fa-duotone fa-folder-tree"></i></span>
+                    </div>
+                    <!-- end título -->
+                    <p>Primero debemos asegurarnos de que nuestros archivos están en orden, ¿tu proyecto tiene esta estructura?</p>
+
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <figure>
+                        <img class="materialboxed" width="100%" src="../../assets/images/paes/fileing-horizontal.svg" alt="imagen fileing">
+                    </figure>
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+
+            <hr class="horizontal-divider">
+            <!-- título -->
+            <div class="section-title">
+                <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Archivos <i class="fa-duotone fa-file-code"></i> </span>
+            </div>
+            <!-- end título -->
+            <p>Revisaremos los siguientes archivos, guíate del código muestra para asegurarte de que tu trabajo es correcto.</p>
+
+            <!-- code files group -->
+            <div class='mt-2 mb-4'>
+                <!-- inicia menú -->
+                <ul class="tabs menu_archivos">
+                    <li class="tab"><a href="#archivo1"><span class='file'><i class='fab fa-html5'></i> <span>index.html</span></span> </a></li>
+                    <li class="tab"><a href="#archivo2"> <span class='file'><i class='fab fa-html5'></i> <span>mi_tema.html</span></span> </a></li>
+
+                    <li class='tab close_menu'><a class='active' href='#empty'><i class='fa-duotone fa-circle-xmark'></i></a></li>
+                </ul>
+
+                <!-- termina menú -->
+                <!-- inician pestañas -->
+                <div id="empty"></div>
+                <div id="archivo1">
+                    <!--Inicia HTML Desplegado-->
+
+                    <div class='title-bar-html'>HTML <span class='fab fa-html5'></span></div>
+                    <code data-gist-id='e2e25e5bb7360f513e7dc3e8cdbb9f6a' data-gist-hide-footer='true' data-gist-highlight-line='lines_comma_separated'></code>
+
+                    <!--Termina HTML Desplegado-->
+
+                </div>
+                <div id="archivo2">
+                    <!--Inicia HTML Desplegado-->
+
+                    <div class='title-bar-html'>HTML <span class='fab fa-html5'></span></div>
+                    <code data-gist-id='b440ba9a9006cb6ed5c5f2283b39050b' data-gist-hide-footer='true' data-gist-highlight-line='lines_comma_separated'></code>
+
+                    <!--Termina HTML Desplegado-->
+                </div>
+
+                <!-- terminan pestañas -->
+            </div>
+            <!-- end code files group -->
+
+        </section>
+        <!--	*** end contenido ***	-->
+
+    </div>
+    <!------------------------------------------------->
+    <!--	end cero	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	uno	-->
+    <!------------------------------------------------->
+    <div class='scrollspy' id='uno'>
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>1</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Añade CSS</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-4 mb-2">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Prepara tus archivos.</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Empezaremos agregando algunos archivos para escribir CSS.</p>
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> En la carpeta <span class='file'><i class='fas fa-folder'></i> <span>root</span></span> > <span class='file'><i class='fas fa-folder'></i> <span>assets</span></span> > <span class='file'><i
+                                class='fas fa-folder'></i> <span>styles</span></span> <span class='verbo'>crea</span> un archivo llamado <span class='file'><i class='fab fa-css3-alt'></i> <span>estilos_mi_nombre.css</span></span> <a class=" tooltipped more-info" data-position="top"
+                            data-tooltip="usa tu nombre para nombrar el archivo. E.g. estilos_de_daniela.css, estilos_jorge.css"><i class='fad fa-question-square'></i></a> </p>
+                    <p><span class="user-one">1: <i class='fak fa-user-1'></i></span> En la carpeta <span class='file'><i class='fas fa-folder'></i> <span>root</span></span> > <span class='file'><i class='fas fa-folder'></i> <span>assets</span></span> > <span class='file'><i
+                                class='fas fa-folder'></i> <span>styles</span></span> <span class='verbo'>crea</span> un archivo llamado <span class='file'><i class='fab fa-css3-alt'></i> <span>estilos_mi_nombre.css</span></span> <a class=" tooltipped more-info" data-position="top"
+                            data-tooltip="usa tu nombre para nombrar el archivo. E.g. estilos_de_daniela.css, estilos_jorge.css"><i class='fad fa-question-square'></i></a> </p>
+                    <figure>
+                        <img class="materialboxed" width="100%" height="auto" src="../../assets/images/paes/fileing-horizontal-css.svg" alt="fileing image">
+                    </figure>
+
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Conecta tus archivos.</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Un sólo archivo <span class='file'><i class='fab fa-css3-alt'></i> <span>estilos_mi_nombre.css</span></span> servirá para todos tus blogs. Una ventaja de escribir CSS en archivos separados es que las referencias que escribamos en él podrán ser reutilizadas.</p>
+
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> Para cada uno de sus archivos <span class='file'><i class='fab fa-html5'></i> <span>mi_tema.html</span></span> (2 por persona 4 en total) <span
+                            class='verbo'>localicen</span> la etiqueta <span class='tag-html'><i class='fas fa-chevron-left'></i><b>head</b><i class='fas fa-chevron-right'></i></span> y dentro <span class='verbo'>usen</span> la etiqueta <span class='tag-html'><i
+                                class='fas fa-chevron-left'></i><b>link</b><i class='fas fa-chevron-right'></i></span> para conectar sus respectivos archivos CSS.</p>
+
+                    <!--Inicia HTML Desplegado-->
+
+                    <div class='title-bar-html'>HTML <span class='fab fa-html5'></span></div>
+                    <code class='forbidden' data-gist-id='b1c54eb0514d59cebc32c474045925cd' data-gist-hide-footer='true' data-gist-highlight-line='6'></code>
+
+                    <!--Termina HTML Desplegado-->
+                    <div class="important">
+                        <i class="fa-duotone fa-square-exclamation"></i> <span>No olvides los atributos de la etiqueta link.</span>
+                    </div>
+                    <div class="important mt-1">
+                        <i class="fa-duotone fa-square-exclamation"></i> <span>Asegúrate de escribir correctamente el nombre de tu archivo y la ruta al mismo.</span>
+                    </div>
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+            <hr class="horizontal-divider">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-2 mb-4">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Tus primeros estilos.</span>
+                    </div>
+                    <!-- end título -->
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> para cada uno de sus archivos <span class='file'><i class='fab fa-css3-alt'></i> <span>estilos_mi_nombre.css</span></span> (uno por persona, dos en
+                        total) sigue las siguientes instrucciones:</p>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                Añade una referencia por palabra clave al <span class='tag-html'><i class='fas fa-chevron-left'></i><b>body</b><i class='fas fa-chevron-right'></i></span> de la página.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                Añade una referencia por palabra clave a <span class='resaltado'>todos</span> los <span class='tag-html'><i class='fas fa-chevron-left'></i><b>article</b><i class='fas fa-chevron-right'></i></span> de tu página.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                <span class='tag-html'><i class='fas fa-chevron-left'></i><b>body</b><i class='fas fa-chevron-right'></i></span> tendrá un <span class='concepto'>color de fondo</span> negro, y un <span class='concepto'>color de letra</span> blanco. (El color blanco <span
+                                    class='verbo'>exprésalo</span> en
+                                hexadecimal).
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                Todos los <span class='tag-html'><i class='fas fa-chevron-left'></i><b>article</b><i class='fas fa-chevron-right'></i></span> tendrán un <span class='concepto'>color de fondo</span> expresado en RGB:
+                                <code class="terminal">rgb(44, 43, 43)</code>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                    <p>Antes de continuar asegúrate de que tus estilos están funcionando. De lo contrario asegúrate de que los archivos estén conectados.</p>
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end uno	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	dos	-->
+    <!------------------------------------------------->
+    <div class='scrollspy' id='dos'>
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>2</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">id's y clases</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-3 mb-4">
+                <!--  primer columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Añade una clase</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Crearemos una clase para resaltar el enlace a la página principal en la barra de navegación <span class='tag-html'><i class='fas fa-chevron-left'></i><b>nav</b><i class='fas fa-chevron-right'></i></span>. </p>
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> para cada uno de sus archivos <span class='file'><i class='fab fa-html5'></i> <span>mi_tema.html</span></span> (dos por persona, 4 en total) <span
+                            class='verbo'>busquen</span> la etiqueta <span class='tag-html'><i class='fas fa-chevron-left'></i><b>nav</b><i class='fas fa-chevron-right'></i></span> > <span class='tag-html'><i class='fas fa-chevron-left'></i><b>ul</b><i class='fas fa-chevron-right'></i></span> >
+                        <span class='tag-html'><i class='fas fa-chevron-left'></i><b>li</b><i class='fas fa-chevron-right'></i></span> > <span class='tag-html'><i class='fas fa-chevron-left'></i><b>a</b><i class='fas fa-chevron-right'></i></span> que conduce a <span class='file'><i
+                                class='fab fa-html5'></i> <span>index.html</span></span> y <span class='verbo'>declara</span> una <span class='concepto'>clase</span> llamada «resaltado».</p>
+                    <p>Recuerden que declaramos clases con el atributo «class» en la etiqueta que deseamos referenciar o apuntar.</p>
+                    <!--Inicia HTML Desplegado-->
+
+                    <div class='title-bar-html'>HTML <span class='fab fa-html5'></span></div>
+                    <code class="forbidden" data-gist-id='bb0e82c27354aec2ffc5b0c2b6d941d0' data-gist-hide-footer='true' data-gist-highlight-line='4'></code>
+
+                    <!--Termina HTML Desplegado-->
+                    <p>No hemos terminado de declarar nuestra clase hasta que escribimos su correspondiente notación en el archivo CSS.</p>
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> Para cada uno de sus archivos <span class='file'><i class='fab fa-css3-alt'></i> <span>estilos_mi_nombre.css</span></span> (uno por persona dos en
+                        total) declara la clase «resaltado» y haz que el color de texto de las etiquetas que posean esa clase sea amarillo.</p>
+
+                    <!--Inicia CSS Desplegado-->
+
+                    <div class='title-bar-css'>CSS <span class='fab fa-css3-alt '></span></div>
+                    <code class="forbidden" data-gist-id='5a96c0babf7e7f318f4e7dd245faad5b' data-gist-hide-footer='true' data-gist-highlight-line='lines_comma_separated'></code>
+
+                    <!--Termina CSS Desplegado-->
+
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Añade un id</span>
+                    </div>
+                    <!-- end título -->
+                    <p>Crearemos un id para dar estilo al título principal de nuestro blog localizado en la etiqueta <span class='tag-html'><i class='fas fa-chevron-left'></i><b>header</b><i class='fas fa-chevron-right'></i></span>. </p>
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> para cada uno de sus archivos <span class='file'><i class='fab fa-html5'></i> <span>mi_tema.html</span></span> (dos por persona, 4 en total) <span
+                            class='verbo'>busquen</span> la etiqueta <span class='tag-html'><i class='fas fa-chevron-left'></i><b>section</b><i class='fas fa-chevron-right'></i></span> > <span class='tag-html'><i class='fas fa-chevron-left'></i><b>header</b><i
+                                class='fas fa-chevron-right'></i></span> que alberga el título de nuestro blog y <span class='verbo'>declara</span> un <span class='concepto'>id</span> llamado «titulo_del_blog».</p>
+
+                    <p>No hemos terminado de declarar nuestro id hasta que escribimos su correspondiente notación en el archivo CSS.</p>
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> Para cada uno de sus archivos <span class='file'><i class='fab fa-css3-alt'></i> <span>estilos_mi_nombre.css</span></span> (uno por persona dos en
+                        total) declara el id «titulo_del_blog». Asegúrate de aplicar las siguientes propiedades:</p>
+
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                <code class="terminal forbidden">text-align: center;</code>
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                <code class="terminal forbidden">font-size: 3rem;</code>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- end lista -->
+                    <p>¿Se dieron cuenta qué efectos tuvieron estas propiedades? ¿Cómo se ve ahora su título?</p>
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end dos	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	tres	-->
+    <!------------------------------------------------->
+    <div class='scrollspy' id='tres'>
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>3</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Entrada: graba un vídeo</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns  ***	-->
+            <div class="twoColumns mt-4 mb-2">
+                <!--  primer columna -->
+                <div>
+                    <p>En las pasadas semanas has investigado de manera formal sobre tu tema. Creemos que ya tienes los suficientes conocimientos para hablar en internet al respecto y queremos escucharte.</p>
+                    <p>Para grabar un vídeo de 2 a 5 minutos de duración te recomendamos la siguiente dinámica: </p>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                <span class='verbo'>Elige</span> un subtema que te apasione, genere interés o polémica y domines bien.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                <span class='verbo'>Usa</span> la metodología que te hemos propuesto en semanas anteriores <a href="pae5.html#investigacion" target="_blank"><i class="fa-duotone fa-link"></i></a> para conducir una <span class='resaltado'>investigación</span> .
+                                No olvides recabar datos objetivos y sólidos para sostener tu idea principal.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                <span class='verbo'>Determina</span> cuál es el <span class='concepto'>objetivo</span> de tu video. ¿Cuál es la <span class='concepto'>idea principal</span>, las <span class='concepto'>ideas secundarias</span> y los <span class='concepto'>datos objetivos</span> que
+                                usarás para desarrollarlas.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                <span class='verbo'>Escribe</span> un pequeño guión que tenga <span class='concepto'>introducción</span> , <span class='concepto'>desarrollo</span> y <span class='concepto'>conclusión</span> .
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">5</div>
+                            <div>
+                                <span class='verbo'>Practica</span> la lectura de tu guión hasta que puedas desarrollar las ideas sin necesidad de leerlo.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">6</div>
+                            <div>
+                                Usa alguna cámara que tengas a la mano para grabar tu vídeo.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">7</div>
+                            <div>
+                                Crédito extra: ¿Sabes usar algún programa de edición? No sólo puede hacerte la vida más fácil al cortar y unir diferentes pedazos de grabación para hacerlo más profesional sino podrás obtener más puntos si en tu entrega demuestras tus conocimientos en edición y
+                                producción.
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- end lista -->
+
+                    <p><span class="user-cero">0: <i class='fak fa-user-0'></i></span> <span class="user-one">1: <i class='fak fa-user-1'></i></span> Para cualquiera de sus dos temas (sólo uno por persona, dos en total) <span class='verbo'>grabarás</span> tu video, lo <span
+                            class='verbo'>subirás</span> a alguna plataforma de
+                        streaming <a class=" tooltipped more-info" data-position="top" data-tooltip="e.g. Youtube, tiktok"><i class='fad fa-question-square'></i></a>, <span class='verbo'>crearás</span> una nueva entrada respetando la última estructura de entrada <a
+                            href="pae5.html#estructura_entrada" target="_blank"><i class="fa-duotone fa-link"></i></a> y <span class='verbo'>añadirás</span> tu video usando una etiqueta <span class='tag-html'><i class='fas fa-chevron-left'></i><b>iframe</b><i class='fas fa-chevron-right'></i></span>
+                        como se explicó en la semana 4 <a href="../teoria/semana4.html#cuatro" target="_blank"><i class="fa-duotone fa-link"></i></a> .</p>
+
+                </div>
+                <!--  end primer columna -->
+                <!--  segunda columna -->
+                <div>
+                    <p>Asegúrate además de atender los siguientes requisitos y consejos:</p>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                Puedes usar cualquier plataforma para subir tu video, recomendamos que lo hagas en youtube y lo definas como «no listado»
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                <span class='verbo'>Consulta</span> la documentación de google si no sabes cómo subir un vídeo de youtube, te la dejamos aquí <a href="https://support.google.com/youtube/answer/57407?hl=es-419&co=GENIE.Platform%3DDesktop" target="_blank"><i
+                                        class="fa-duotone fa-link"></i></a>
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                Si has elegido otra plataforma debes averiguar como añadirla a tu blog usando una etiqueta <span class='tag-html'><i class='fas fa-chevron-left'></i><b>iframe</b><i class='fas fa-chevron-right'></i></span> o algún otro método.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                Si tus papás no están de acuerdo en que aparezcas en un video o no quieres aparecer por cualquier otra razón puedes usar sólo tu voz.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">5</div>
+                            <div>
+                                Nunca uses el uniforme de tu colegio al grabar el video ni des datos personales, de preferencia usa de fondo una pared lisa.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">6</div>
+                            <div>
+                                Platica con tu profesor tus inquietudes, si tienes dudas pregunta. Estamos para ayudarte.
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!-- end lista -->
+                </div>
+                <!--  end segunda columna -->
+            </div>
+            <!--	*** end 2 columns ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end tres	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	cuatro	-->
+    <!------------------------------------------------->
+    <div class='scrollspy' id='cuatro'>
+        <!--	*** parallax ***	-->
+        <div class="parallax-container">
+            <div class="parallax instapaper_ignore">
+                <img class="image_parallax" src="../../assets/images/parallax_dev2.svg">
+            </div>
+            <div class=" titulo-parallax-container">
+                <div class="numero-seccion">
+                    <span>4</span>
+                </div>
+                <div class="titulo-seccion">
+                    <span class="titulo-seccion-texto">Entrega tu trabajo</span>
+                </div>
+            </div>
+        </div>
+        <!--	*** end parallax ***	-->
+
+        <!--	*** contenido ***	-->
+        <section class="responsive-container">
+            <!--	*** 2 columns golden ***	-->
+            <div class="twoColumnsGolden mt-4 mb-3">
+                <!-- Columna pequeña -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Compartir en git <i class='fa-brands fa-git-alt'></i></span>
+                    </div>
+                    <!-- end título -->
+                    <p>Recuerda siempre hacer <span class='concepto'>pull<i class='fa-brands fa-git-alt'></i></span> antes de empezar a trabajar y <span class='concepto'>add<i class='fa-brands fa-git-alt'></i></span>, <span class='concepto'>commit<i class='fa-brands fa-git-alt'></i></span> y <span
+                            class='concepto'>push<i class='fa-brands fa-git-alt'></i></span> a tu repositorio cuando terminas de
+                        trabajar.</p>
+                    <p>Nunca permitas que en tu equipo se rompa la comunicación, el interés y la corresponsabilidad en el proyecto. Es muy importante que el equipo se mantenga unido y funcional. La dinámica de git sólo funciona si uno sabe lo que el otro está haciendo.</p>
+
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Checklist</span> <i class="fa-duotone fa-clipboard-list-check"></i>
+                    </div>
+                    <!-- end título -->
+                    <p>Para tu tranquilidad preparamos una lista de tareas con lo que se evaluará en este PAE.</p>
+                    <!-- lista -->
+                    <ul class="collection lista">
+                        <li class="listaElement">
+                            <div class="list-num" class="list-num">1</div>
+                            <div>
+                                Se añadieron <span class='resaltado'>dos</span> archivos CSS al proyecto.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">2</div>
+                            <div>
+                                Dichos archivos se conectaron con los respectivos archivos <span class='file'><i class='fab fa-html5'></i> <span>mi_tema.html</span></span>
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">3</div>
+                            <div>
+                                Usando CSS se modificó el <span class='tag-html'><i class='fas fa-chevron-left'></i><b>body</b><i class='fas fa-chevron-right'></i></span> y los <span class='tag-html'><i class='fas fa-chevron-left'></i><b>article</b><i class='fas fa-chevron-right'></i></span> de
+                                todos los archivos <span class='file'><i class='fab fa-html5'></i> <span>mi_tema.html</span></span>
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">4</div>
+                            <div>
+                                Se creó y usó una clase para controlar elementos resaltados en la <span class='tag-html'><i class='fas fa-chevron-left'></i><b>nav</b><i class='fas fa-chevron-right'></i></span>
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">5</div>
+                            <div>
+                                Se creó y usó un id para controlar los estilos del título del blog.
+                            </div>
+                        </li>
+                        <li class="listaElement">
+                            <div class="list-num">6</div>
+                            <div>
+                                Se crearon 2 vídeos <i style="color: red;" class="fa-brands fa-youtube"></i> (uno por persona) y se añadieron a una nueva entrada en sus respectivos temas.
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- end lista -->
+                </div>
+                <!-- end Columna pequeña -->
+                <!-- Columna grande -->
+                <div>
+                    <!-- título -->
+                    <div class="section-title">
+                        <i class="fa-duotone fa-shoe-prints fa-rotate-270"></i> <span>Previsualización</span>
+                    </div>
+                    <!-- end título -->
+                    <p>A partir de ahora creamos esta previsualización de cómo debería verse tu proyecto cuando termines este PAE. </p>
+                    <p>¿Tu blog se ve así?</p>
+                    <!--	*** youtube video ***	-->
+                    <figure class="youtube">
+                        <iframe src="https://www.youtube-nocookie.com/embed/TTPUft2GrM4?version=3&loop=1&playlist=TTPUft2GrM4&modestbranding=1&rel=0&showinfo=0" title="video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                    </figure>
+                    <figcaption class="youtube-caption">
+                        <i class="fa-brands fa-youtube"></i> <span>Verifica que tu trabajo se vea así antes de hacer push.</span>
+                    </figcaption>
+                    <!--	*** end youtube video ***	-->
+                </div>
+                <!-- end Columna grande -->
+            </div>
+            <!--	*** end 2 columns golden ***	-->
+        </section>
+        <!--	*** end contenido ***	-->
+    </div>
+    <!------------------------------------------------->
+    <!--	end cuatro	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--    footer    -->
+    <!------------------------------------------------->
+    <footer>
+        <img class="logo-colegio" src="../../assets/images/colegio.webp" width='397' height='200' alt="Colegio">
+        <div class="pwr-huin">
+            <span>Powered by </span>
+            <img class="logo-huin" src="../../assets/images/logo-huin-final-blanco-(sin-solutions).webp" width='auto' height='auto' alt="Human Inspiration">
+        </div>
+    </footer>
+    <!------------------------------------------------->
+    <!--    end footer    -->
+    <!------------------------------------------------->
+
+    <!-- Materialize: Compiled and minified JavaScript -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> </script>
+    <!-- GASP 3 for animations on view -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <!-- gist-embed -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/gist-embed@1.0.4/dist/gist-embed.min.js'></script>
+    <!-- custom JS -->
+    <script src="../../assets/js/confignav_pae.min.js"></script>
+    <script src="../../assets/js/animations_pae.min.js"></script>
+    <script src="../../assets/js/parallax_image_selector.min.js"></script>
+    <script src="../../assets/js/deploy_school.min.js"></script>
+
+</body>
+
+</html>

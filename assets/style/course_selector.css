@@ -1,0 +1,228 @@
+/*###################################################*/
+/*...................................................*/
+/* root variables (responsive font size installed)   */
+/*...................................................*/
+/*###################################################*/
+
+:root {
+    /* font-size */
+    --fs-b: 14px;
+
+    /* variable Colors */
+    --background: #121212;
+    --background-mono: #1e2020;
+    --text: #d8cdcd;
+    --primary: #fa6a05;
+    --primary-mono: #FA9D5A;
+    --contrast: #1550AD;
+    --contrast-mono: #A2C4FA;
+
+    --dev1: #ee2727;
+    --dev1-mono: #d54e4e;
+    --dev2: #34c227;
+    --dev2-mono: #4ca944;
+    --dev3: #386de8;
+    --dev3-mono: #5c7ecf;
+
+    --animate-delay: 0.3s;
+
+}
+
+/* tablet up */
+@media (min-width: 768px) {
+    :root {
+        /* font-size */
+        --fs-b: 16px;
+    }
+}
+
+/* end tablet up */
+
+/* laptop up */
+@media (min-width: 1279px) {
+    :root {
+        /* font-size */
+        --fs-b: 18px;
+    }
+}
+
+/* end laptop up */
+
+/* desktop up */
+@media (min-width: 1300px) {
+    :root {
+        /* font-size */
+        --fs-b: 22px;
+    }
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end root variables                                */
+/*...................................................*/
+/*###################################################*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* general properties                                */
+/*...................................................*/
+/*###################################################*/
+
+html {
+    /* scroll smooth from nav control */
+    scroll-behavior: smooth;
+    /* font size general control using variable */
+    font-size: var(--fs-b);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+
+}
+
+body {
+    /* scroll spy */
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    /* sticky footer */
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    max-width: 1824px;
+    margin: 0 auto !important;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    section {
+        flex-direction: row;
+        min-height: 80vh;
+    }
+}
+
+/* end cellphone landscape up */
+
+
+
+/*###################################################*/
+/*...................................................*/
+/* end general properties                            */
+/*...................................................*/
+/*###################################################*/
+
+
+
+/*-------------------------------*/
+/* botones */
+/*-------------------------------*/
+.curso {
+    /*layout*/
+    width: 90vw;
+    height: 7.5rem;
+    margin: 0.7rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*end layout*/
+    /*Material*/
+    background-color: var(--background-mono);
+    /*endMaterial*/
+    /*border*/
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    /*end border*/
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    .curso {
+        /*layout*/
+        width: 20vw;
+        height: 8rem;
+        margin: 0 3rem;
+        /*endlayout*/
+
+    }
+}
+
+/* end cellphone landscape up */
+
+/* rewrite materialize */
+.btn:hover {
+    background-color: var(--primary) !important;
+    filter: brightness(1);
+    -webkit-filter: brightness(1);
+}
+
+#toast-container {
+    background-color: var(--primary);
+}
+
+.toast {
+    background-color: var(--primary-mono);
+    color: white
+}
+
+
+/*-------------------------------*/
+/* end botones */
+/*-------------------------------*/
+
+
+/*-------------------------------*/
+/* logos */
+/*-------------------------------*/
+
+.dev2-logo,
+.dev3-logo,
+.dev1-logo {
+    width: 8.3rem;
+    height: auto;
+
+}
+
+/*-------------------------------*/
+/* end logos */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* footer */
+/*-------------------------------*/
+
+footer {
+    /* sticky footer */
+    margin-top: auto;
+
+
+}
+
+footer p {
+    /* layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+footer img {
+    height: 3.2rem;
+    margin-left: 0.7rem;
+    padding-bottom: 0.5rem;
+
+}
+
+/*-------------------------------*/
+/* end footer */
+/*-------------------------------*/

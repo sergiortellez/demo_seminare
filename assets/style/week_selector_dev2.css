@@ -1,0 +1,774 @@
+/*###################################################*/
+/*...................................................*/
+/* root variables (responsive font size installed)   */
+/*...................................................*/
+/*###################################################*/
+
+:root {
+    /* font-size */
+    --fs-b: 14px;
+
+    /* variable Colors */
+    --background: #121212;
+    --background-mono: #1e2020;
+    --text: #d8cdcd;
+    --primary: #fa6a05;
+    --primary-mono: #FA9D5A;
+    --contrast: #1550AD;
+    --contrast-mono: #A2C4FA;
+
+    --dev1: #ee2727;
+    --dev1-mono: #d54e4e;
+    --dev2: #34c227;
+    --dev2-mono: #4ca944;
+    --dev3: #386de8;
+    --dev3-mono: #5c7ecf;
+
+    /* cambiar para cambiar tema */
+    --dev: #34c227;
+    --dev-mono: #4ca944;
+
+    --header-height: 20vh;
+    --nav-height: 11vh;
+
+}
+
+/* tablet up */
+@media (min-width: 768px) {
+    :root {
+        /* font-size */
+        --fs-b: 16px;
+    }
+}
+
+/* end tablet up */
+
+/* laptop up */
+@media (min-width: 1279px) {
+    :root {
+        /* font-size */
+        --fs-b: 18px;
+    }
+}
+
+/* end laptop up */
+
+/* desktop up */
+@media (min-width: 1300px) {
+    :root {
+        /* font-size */
+        --fs-b: 22px;
+    }
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end root variables                                */
+/*...................................................*/
+/*###################################################*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* general properties                                */
+/*...................................................*/
+/*###################################################*/
+
+html {
+    /* scroll smooth from nav control */
+    scroll-behavior: smooth;
+    /* font size general control using variable */
+    font-size: var(--fs-b);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+}
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+    background-color: var(--background);
+
+
+}
+
+/*###################################################*/
+/*...................................................*/
+/* end general properties                            */
+/*...................................................*/
+/*###################################################*/
+
+
+
+
+/*-------------------------------*/
+/* responsive container */
+/*-------------------------------*/
+
+.responsive-container {
+    max-width: 1824px;
+    margin: 0 auto !important;
+    padding: 0;
+    padding-left: env(safe-area-inset-left);
+}
+
+.scrollspy {
+    padding-top: calc(var(--nav-height) + 20px);
+}
+
+/*-------------------------------*/
+/* end responsive container */
+/*-------------------------------*/
+
+
+
+/*###################################################*/
+/*...................................................*/
+/* nav */
+/*...................................................*/
+/*###################################################*/
+
+/*-------------------------------*/
+/* general */
+/*-------------------------------*/
+nav {
+    /* layout */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--background-mono);
+    z-index: 50;
+    height: var(--nav-height) !important;
+    opacity: 0;
+
+    /*  Position*/
+    position: fixed;
+    top: 0;
+
+    /* look */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    box-shadow: none;
+}
+
+/*-------------------------------*/
+/* end general */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* logo */
+/*-------------------------------*/
+
+.dev2-logo,
+.dev3-logo,
+.dev1-logo {
+    width: 7.3rem;
+    height: auto;
+}
+
+.logo-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
+/*-------------------------------*/
+/* end logo */
+/*-------------------------------*/
+
+
+/*-------------------------------*/
+/* menu */
+/*-------------------------------*/
+
+.nav-style {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.nav-style>li {
+    height: 100%;
+}
+
+.nav-style>li>a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-style>li>a>svg {
+    color: white;
+}
+
+.nav-style>li>a:hover {
+    font-weight: 200;
+    color: white;
+}
+
+.nav-style>li:hover {
+    background-color: var(--dev-mono);
+}
+
+
+/* cellphone landscape up */
+
+@media (min-width: 576px) {
+    .nav-style>li>a {
+        font-weight: 100;
+    }
+
+    /* El texto aparece y desaparece con hover */
+    .nav-style li a span {
+        display: none;
+        margin-left: 0.2rem;
+    }
+
+    .nav-style li a:hover>span {
+        display: inline-block;
+    }
+
+}
+
+/* end cellphone landscape up */
+
+/* --active-- */
+.nav-style a.active svg {
+    color: var(--dev);
+}
+
+.sidenav a.active svg,
+.sidenav a.active span {
+    color: var(--dev-mono);
+}
+
+/* --------- side nav --------- */
+
+#mobile-demo {
+    background-color: var(--background-mono);
+    height: calc(100% - var(--nav-height));
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 0.5rem;
+    padding-top: 1.3rem;
+    top: var(--nav-height);
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+}
+
+#mobile-demo .close-card {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding-left: 0.3rem;
+}
+
+
+#mobile-demo ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 1.3rem;
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+#mobile-demo a {
+    font-size: 1.2rem;
+    width: 100%;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+}
+
+#mobile-demo a span {
+    margin-left: 1rem;
+}
+
+#mobile-demo a:hover {
+    font-size: 1.6rem;
+}
+
+#mobile-demo .user-nav-container {
+    margin-top: auto;
+    font-size: 1.5rem;
+}
+
+/* --------- end side nav --------- */
+
+/*-------------------------------*/
+/* end menu */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* user */
+/*-------------------------------*/
+
+.user-nav-container {
+    margin-right: 1rem;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .user-nav-container {
+        font-size: 1.7rem;
+    }
+}
+
+/* end tablet up */
+
+#userDropdown {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    top: -56.6094px;
+    background-color: rgba(177, 168, 168, 0.906);
+    width: auto !important;
+    height: auto !important;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+}
+
+/*-------------------------------*/
+/* end user */
+/*-------------------------------*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* end nav */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* grid general */
+/*...................................................*/
+/*###################################################*/
+
+/*-------------------------------*/
+/* títulos grid */
+/*-------------------------------*/
+.titulo {
+    margin-top: 3rem;
+    min-width: 100%;
+    opacity: 0
+}
+
+.title-text-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.85rem;
+    font-size: 1.3rem;
+    color: var(--dev-mono);
+}
+
+
+.titulo hr {
+
+    border: none;
+    height: 2px;
+    background: var(--background-mono);
+    margin-bottom: 50px;
+}
+
+#proyectos,
+#codding {
+    padding-top: var(--nav-height);
+}
+
+
+
+/*-------------------------------*/
+/* end títulos grid */
+/*-------------------------------*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* end grid general*/
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* grid coding */
+/*...................................................*/
+/*###################################################*/
+
+/*-------------------------------*/
+/* grid-coding */
+/*-------------------------------*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    margin: 0 2rem;
+    overflow: hidden
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 1rem;
+        gap: 2rem;
+    }
+}
+
+/* end cellphone landscape up */
+
+
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 2rem;
+    }
+}
+
+/* end tablet up */
+
+/*-------------------------------*/
+/* end grid-coding */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* card-coding */
+/*-------------------------------*/
+.card {
+    margin: 0;
+    background-color: var(--background);
+    opacity: 0; 
+}
+.opacity{
+     opacity: 1;
+}
+
+
+/* header */
+.card-header {
+    background-color: var(--background-mono);
+    min-height: clamp(6rem, var(--header-height), var(--header-height));
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.link-icon-container {
+    height: 8rem;
+    width: 8rem;
+    background-color: var(--dev-mono);
+    padding: 0.6rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: white;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* tablet portrait up */
+@media (min-width: 768px) {
+    .link-icon-container {
+        height: 4rem;
+        width: 4rem;
+        font-size: 2rem;
+    }
+}
+
+/* end tablet up */
+/* end header */
+
+/* Card content */
+.card-content {
+    background-color: var(--dev);
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    height: calc(var(--header-height)/1.618033);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.card-title {
+    width: 100%;
+    color: white;
+    margin: 0;
+    font-size: 2rem !important;
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    .card-title {
+        font-size: 1.7rem !important;
+    }
+}
+
+/* end cellphone landscape up */
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .card-title {
+        font-size: 1.7rem !important;
+    }
+}
+
+/* end tablet up */
+
+.card-title .material-icons {
+    font-size: 2rem;
+}
+
+/* sobreescribe materialize porque la clase right estaba haciendo que en ciertos equipos con ciertas resoluciones los títulos se vieran desfasados. */
+i .right {
+    margin-left: 0;
+}
+
+/* end Card Content */
+
+/* back card */
+.card-reveal {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: var(--background-mono) !important;
+}
+
+.back-title,
+.back-title i {
+
+
+    font-size: 1.3rem !important;
+    color: var(--dev);
+}
+
+
+.card-reveal ul {
+    color: var(--dev-mono);
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+
+    .card-reveal ul {
+        font-size: 0.8rem;
+    }
+}
+
+/* end cellphone landscape up */
+
+.icon::before {
+    display: none;
+}
+
+.card-reveal ul li::before {
+    font-family: "Font Awesome 6 Duotone";
+    font-weight: 400;
+    content: "\f058 ";
+
+}
+
+.card-reveal ul li svg {
+    margin-right: 0.6rem;
+    color: #d8cdcd;
+}
+
+/* end back card */
+
+
+
+/*-------------------------------*/
+/* end card-coding */
+/*-------------------------------*/
+
+
+/*###################################################*/
+/*...................................................*/
+/* end grid coding */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* grid proyectos */
+/*...................................................*/
+/*###################################################*/
+/*-------------------------------*/
+/* card-proyectos */
+/*-------------------------------*/
+
+/* header */
+
+/* end header */
+
+/* content */
+.card-content-proyectos {
+    background-color: var(--dev);
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    height: calc(var(--header-height)/1.618033);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding: 0.4rem;
+}
+
+.card-title-proyectos {
+    width: 100%;
+    color: white;
+    margin: 0;
+    font-size: 1.4rem !important;
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    .card-title-proyectos {
+        font-size: 1rem !important;
+    }
+}
+
+/* end cellphone landscape up */
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .card-title-proyectos {
+        font-size: 1.2rem !important;
+    }
+}
+
+.card-content-proyectos .material-icons {
+    font-size: 1.5rem;
+}
+
+/* end content */
+
+
+/*-------------------------------*/
+/* end card-proyectos */
+/*-------------------------------*/
+
+/*###################################################*/
+/*...................................................*/
+/* end grid proyectos */
+/*...................................................*/
+/*###################################################*/
+
+/*-------------------------------*/
+/* restricted */
+/*-------------------------------*/
+
+#toast-container {
+    background-color: var(--primary);
+}
+
+.toast {
+    background-color: var(--primary-mono);
+    color: white
+}
+
+/* restricted cards */
+.restricted {
+    filter: blur(2.5px);
+    pointer-events: none;
+    -webkit-filter: blur(2.5px);
+    cursor: not-allowed;
+}
+
+
+/* end restricted cards */
+/*-------------------------------*/
+/* end restricted */
+/*-------------------------------*/
+
+/*###################################################*/
+/*...................................................*/
+/* footer */
+/*...................................................*/
+/*###################################################*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 2rem;
+    opacity: 0;
+}
+
+/* cellphone landscape up */
+@media (min-width: 576px) {
+    footer {
+        flex-direction: row;
+        margin-top: 4rem;
+    }
+}
+
+/* end cellphone landscape up */
+footer .pwr-huin {
+    /* layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.pwr-huin span {
+    width: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+footer .logo-huin {
+    height: 3.2rem;
+    margin-left: 0.7rem;
+    padding-bottom: 0.5rem;
+
+}
+
+footer .logo-colegio {
+    width: 8rem;
+    height: auto;
+}
+
+
+/*###################################################*/
+/*...................................................*/
+/* end footer */
+/*...................................................*/
+/*###################################################*/

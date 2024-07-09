@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
+    <meta name="theme-color" content="#1e2020">
+    <title>DEV 2 | Seminare </title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Materialize: Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- FontAwesome -->
+    <script data-search-pseudo-elements defer src="https://kit.fontawesome.com/b485de8470.js" crossorigin="anonymous"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style/week_selector_dev2.min.css">
+
+    <!-- Fav icon -->
+    <link rel='apple-touch-icon' sizes='180x180' href='assets/images/favicon/apple-touch-icon.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='assets/images/favicon/favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='16x16' href='assets/images/favicon/favicon-16x16.png'>
+    <link rel='manifest' href='assets/images/favicon/site.webmanifest'>
+
+    <!-- TODO: install google Analytics -->
+
+
+</head>
+
+<body>
+
+    <!------------------------------------------------->
+    <!--	navbar	-->
+    <!------------------------------------------------->
+
+    <nav>
+        <!--	*** logo ***	-->
+        <a href="index.html" class="logo-nav-container">
+            <img class="dev2-logo" src="assets/images/dev2-logo.svg" alt="DEV2">
+        </a>
+        <!--	*** end logo ***	-->
+
+        <!--	*** menu ***	-->
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fad fa-bars fa-2x"></i></a> <!-- mobil menu -->
+
+        <ul class="hide-on-med-and-down nav-style">
+            <li><a href="#coding"> <i class="fa fa-code"></i><span>Coding</span></a></li>
+            <li><a href="#proyectos"> <i class="fa fa-gift"></i><span>Proyectos</span></a></li>
+            <li><a class="notYourCourse"> <i class="fak fa-seeds"></i><span>Emprendimiento</span></a></li>
+        </ul>
+        <!--	*** end menu ***	-->
+
+        <!--	*** user ***	-->
+        <div class="user-nav-container hide-on-med-and-down dropdown-trigger" data-target="userDropdown">
+            <i class="fa-duotone fa-image-user"></i>
+        </div>
+        <!--	*** end user ***	-->
+    </nav>
+
+    <!-- side nav structure -->
+    <div class="sidenav" id="mobile-demo">
+        <div class="close-card">
+            <i class="fa-duotone fa-ellipsis-vertical"></i>
+        </div>
+        <ul>
+            <li><a href="#coding" class="sidenav-close"> <i class="fa fa-code"></i><span>Coding</span></a></li>
+            <li><a href="#proyectos" class="sidenav-close"> <i class="fa fa-gift"></i><span>Proyectos</span></a></li>
+            <li><a href="#emprendimiento" class="notYourCourse"> <i class="fak fa-seeds"></i><span>Emprendimiento</span></a></li>
+
+            <!--	*** user ***	-->
+            <div class="user-nav-container">
+                <div><i class="fa-duotone fa-image-user"></i> Nombre del Alumno</div>
+                <hr>
+                <div class="colegio"></div>
+            </div>
+            <!--	*** end user ***	-->
+        </ul>
+    </div>
+    <!-- Dropdown Structure -->
+    <div id="userDropdown" class="dropdown-content">
+        <div>Nombre del Alumno</div>
+        <hr>
+        <div class="colegio"></div>
+    </div>
+
+    <!------------------------------------------------->
+    <!--	end navbar	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	responsive container	-->
+    <!------------------------------------------------->
+    <div class="responsive-container">
+
+        <!------------------------------------------------->
+        <!--	grid-coding	-->
+        <!------------------------------------------------->
+        <section id="coding" class="scrollspy">
+            <!-- Título -->
+            <div class="titulo">
+                <div class="title-text-container" data-aos-delay="300"><span><i class="fa fa-code"></i> Coding</span> </div>
+                <hr>
+            </div>
+            <!--end Título -->
+            <!-- grid -->
+            <div class="grid">
+                <!-- card week 0-->
+                <article class="card restricted">
+                    <div class="card-header">
+
+                        <a href="dev2/paes/pae0.html" class="link-icon-container">
+                            <i class="fa-duotone fa-laptop-code"></i>
+                        </a>
+
+                    </div>
+                    <div class="card-content activator">
+                        <span class="card-title activator">Semana 0 <i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Temas <i class="material-icons right">close</i></span>
+
+                        <ul>
+                            <li class="icon">¿Qué es internet?</li>
+                            <li class="icon">Git</li>
+                            <li class="icon">Visual Code Studio</li>
+                            <li class="icon">Github</li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- end card semana 0-->
+
+                <!-- card semana 1 -->
+                <article class="card restricted">
+                    <div class="card-header">
+                        <a href="dev2/teoria/semana1.html" class="link-icon-container">
+                            <i class="fa-duotone fa-book-open-cover"></i>
+                        </a>
+                        <a href="dev2/paes/pae1.html" class="link-icon-container">
+                            <i class="fa-duotone fa-laptop-code"></i>
+                        </a>
+
+                    </div>
+                    <div class="card-content activator">
+                        <span class="card-title activator">Semana 1 <i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Temas <i class="material-icons right">close</i></span>
+
+                        <ul>
+                            <li class="icon">Introducción a HTML</li>
+                            <li class="icon">Etiquetas</li>
+                            <li class="icon">Estructura básica</li>
+                            <li class="icon">Títulos</li>
+                            <li class="icon">Párrafos</li>
+                            <li class="icon">Comentarios</li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- end card semana 1 -->
+
+                <!-- card semana 2 -->
+                <article class="card restricted">
+                    <div class="card-header">
+                        <a href="dev2/teoria/semana2.html" class="link-icon-container">
+                            <i class="fa-duotone fa-book-open-cover"></i>
+                        </a>
+                        <a href="dev2/paes/pae2.html" class="link-icon-container">
+                            <i class="fa-duotone fa-laptop-code"></i>
+                        </a>
+
+                    </div>
+                    <div class="card-content activator">
+                        <span class="card-title activator">Semana 2 <i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Temas <i class="material-icons right">close</i></span>
+
+                        <ul>
+                            <li class="icon">&lt;div&gt;, &lt;section&gt;, &lt;main&gt;</li>
+                            <li class="icon">&lt;header&gt;, &lt;footer&gt;</li>
+                            <li class="icon">&lt;aside&gt;</li>
+                            <li class="icon">&lt;article&gt;</li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- end card semana 2 -->
+
+                <!-- card semana 3 -->
+                <article class="card restricted">
+                    <div class="card-header">
+                        <a href="dev2/teoria/semana3.html" class="link-icon-container">
+                            <i class="fa-duotone fa-book-open-cover"></i>
+                        </a>
+                        <a href="dev2/paes/pae3.html" class="link-icon-container">
+                            <i class="fa-duotone fa-laptop-code"></i>
+                        </a>
+
+                    </div>
+                    <div class="card-content activator">
+                        <span class="card-title activator">Semana 3 <i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Temas <i class="material-icons right">close</i></span>
+
+                        <ul>
+                            <li class="icon">&lt;nav&gt;</li>
+                            <li class="icon">barras de navegación</li>
+                            <li class="icon">anclas:&lt;a&gt;</li>
+                            <li class="icon">listas:&lt;ul&gt; &lt;ol&gt;</li>
+                            <li class="icon">&lt;li&gt;</li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- end card semana 3 -->
+
+                <!-- card semana 4 -->
+                <article class="card restricted">
+                    <div class="card-header">
+                        <a href="dev2/teoria/semana4.html" class="link-icon-container">
+                            <i class="fa-duotone fa-book-open-cover"></i>
+                        </a>
+                        <a href="dev2/paes/pae4.html" class="link-icon-container">
+                            <i class="fa-duotone fa-laptop-code"></i>
+                        </a>
+
+                    </div>
+                    <div class="card-content activator">
+                        <span class="card-title activator">semana 4 <i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Temas <i class="material-icons right">close</i></span>
+
+                        <ul>
+                            <li class="icon">imágenes y videos</li>
+                            <li class="icon">&lt;img&gt;</li>
+                            <li class="icon">&lt;figure&gt;, &lt;figcaption&gt;</li>
+                            <li class="icon">&lt;iframe&gt;</li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- end card semana 4 -->
+
+                <!-- card semana 5 -->
+                <article class="card">
+                    <div class="card-header">
+                        <a href="dev2/teoria/semana5.html" class="link-icon-container">
+                            <i class="fa-duotone fa-book-open-cover"></i>
+                        </a>
+                        <a href="dev2/paes/pae5.html" class="link-icon-container">
+                            <i class="fa-duotone fa-laptop-code"></i>
+                        </a>
+
+                    </div>
+                    <div class="card-content activator">
+                        <span class="card-title activator">semana 5 <i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Temas <i class="material-icons right">close</i></span>
+
+                        <ul>
+                            <li class="icon">Formato de texto</li>
+                            <li class="icon">&lt;span&gt;</li>
+                            <li class="icon">Citas</li>
+                            <li class="icon">&lt;meter&gt;</li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- end card semana 5 -->
+
+                <!-- card semana 6 -->
+                <article class="card">
+                    <div class="card-header">
+                        <a href="dev2/teoria/semana6.html" class="link-icon-container">
+                            <i class="fa-duotone fa-book-open-cover"></i>
+                        </a>
+                        <a href="dev2/paes/pae6.html" class="link-icon-container">
+                            <i class="fa-duotone fa-laptop-code"></i>
+                        </a>
+
+                    </div>
+                    <div class="card-content activator">
+                        <span class="card-title activator">semana 6 <i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Temas <i class="material-icons right">close</i></span>
+
+                        <ul>
+                            <li class="icon">Intro a CSS</li>
+                            <li class="icon">Propiedades de CSS</li>
+                            <li class="icon">Tipos de apuntadores</li>
+                            <li class="icon">Inheritance/Cascade</li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- end card semana 6 -->
+
+                <!-- card semana 7 -->
+                <article class="card restricted">
+                    <div class="card-header">
+                        <a href="dev2/teoria/semana7.html" class="link-icon-container">
+                            <i class="fa-duotone fa-book-open-cover"></i>
+                        </a>
+                        <a href="dev2/paes/pae7.html" class="link-icon-container">
+                            <i class="fa-duotone fa-laptop-code"></i>
+                        </a>
+
+                    </div>
+                    <div class="card-content activator">
+                        <span class="card-title activator">semana 7 <i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Temas <i class="material-icons right">close</i></span>
+
+                        <ul>
+                            <li class="icon">Etiquetas en línea</li>
+                            <li class="icon">Etiquetas de bloque</li>
+                            <li class="icon">Modelo de caja tradicional</li>
+                            <li class="icon">Margin, border y padding</li>
+                            <li class="icon">Specificity</li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- end card semana 7 -->
+
+                <!-- card semana 8 -->
+                <article class="card restricted">
+                    <div class="card-header">
+                        <a href="dev2/teoria/semana8.html" class="link-icon-container">
+                            <i class="fa-duotone fa-book-open-cover"></i>
+                        </a>
+                        <a href="dev2/paes/pae8.html" class="link-icon-container">
+                            <i class="fa-duotone fa-laptop-code"></i>
+                        </a>
+
+                    </div>
+                    <div class="card-content activator">
+                        <span class="card-title activator">semana 8 <i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Temas <i class="material-icons right">close</i></span>
+
+                        <ul>
+                            <li class="icon">Posicionamiento de elementos</li>
+                            <li class="icon">CSS grid</li>
+                            <li class="icon">repeat()</li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- end card semana 8 -->
+
+                <!-- card semana 9 -->
+                <article class="card">
+                    <div class="card-header">
+                        <a href="dev2/teoria/semana9.html" class="link-icon-container">
+                            <i class="fa-duotone fa-book-open-cover"></i>
+                        </a>
+                        <a href="dev2/paes/pae9.html" class="link-icon-container">
+                            <i class="fa-duotone fa-laptop-code"></i>
+                        </a>
+
+                    </div>
+                    <div class="card-content activator">
+                        <span class="card-title activator">semana 9 <i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Temas <i class="material-icons right">close</i></span>
+
+                        <ul>
+                            <li class="icon">Flexbox</li>
+                            <li class="icon">nth child</li>
+                            <li class="icon">pseudo elements</li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- end card semana 9 -->
+
+                <!-- card semana 10 -->
+                <article class="card restricted">
+                    <div class="card-header">
+                        <a href="dev2/teoria/semana10.html" class="link-icon-container">
+                            <i class="fa-duotone fa-book-open-cover"></i>
+                        </a>
+                        <a href="dev2/paes/pae10.html" class="link-icon-container">
+                            <i class="fa-duotone fa-laptop-code"></i>
+                        </a>
+
+                    </div>
+                    <div class="card-content activator">
+                        <span class="card-title activator">semana 10 <i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Temas <i class="material-icons right">close</i></span>
+
+                        <ul>
+                            <li class="icon">Diseño responsivo</li>
+                            <li class="icon">media queries</li>
+                            <li class="icon">funciones responsivas</li>
+                            <li class="icon">Posicionamiento especial</li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- end card semana 10 -->
+
+                <!-- card semana 11 -->
+                <article class="card restricted">
+                    <div class="card-header">
+                        <a href="dev2/teoria/semana11.html" class="link-icon-container">
+                            <i class="fa-duotone fa-book-open-cover"></i>
+                        </a>
+                        <a href="dev2/paes/pae11.html" class="link-icon-container">
+                            <i class="fa-duotone fa-laptop-code"></i>
+                        </a>
+
+                    </div>
+                    <div class="card-content activator">
+                        <span class="card-title activator">semana 11 <i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Temas <i class="material-icons right">close</i></span>
+
+                        <ul>
+                            <li class="icon">Tema 1</li>
+                            <li class="icon"></li>
+                            <li class="icon"></li>
+                            <li class="icon"></li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- end card semana 11 -->
+
+                <!-- card semana 12 -->
+                <article class="card restricted">
+                    <div class="card-header">
+                        <a href="dev2/teoria/semana12.html" class="link-icon-container">
+                            <i class="fa-duotone fa-book-open-cover"></i>
+                        </a>
+                        <a href="dev2/paes/pae12.html" class="link-icon-container">
+                            <i class="fa-duotone fa-laptop-code"></i>
+                        </a>
+
+                    </div>
+                    <div class="card-content activator">
+                        <span class="card-title activator">semana 12 <i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Temas <i class="material-icons right">close</i></span>
+
+                        <ul>
+                            <li class="icon">Tema 1</li>
+                            <li class="icon"></li>
+                            <li class="icon"></li>
+                            <li class="icon"></li>
+                        </ul>
+                    </div>
+                </article>
+                <!-- end card semana 12 -->
+            </div>
+            <!-- end grid -->
+
+        </section>
+        <!------------------------------------------------->
+        <!--	end grid-coding	-->
+        <!------------------------------------------------->
+
+        <!------------------------------------------------->
+        <!--	grid-proyectos	-->
+        <!------------------------------------------------->
+        <section id="proyectos" class="scrollspy">
+            <!-- Título -->
+            <div class="titulo">
+                <div class="title-text-container"><span><i class="fa fa-gift"></i> Proyectos</span> </div>
+                <hr>
+            </div>
+            <!--end Título -->
+
+            <!-- grid -->
+            <div class="grid">
+
+                <!-- card Proyecto -->
+                <article class="card restricted">
+
+                    <a href="dev2/proyectos/" class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/proyectos_dev2/pobreza.webp" loading="lazy" width='350' height='250'>
+                    </a>
+                    <div class="card-content-proyectos activator">
+                        <span class="card-title-proyectos activator">La infamia de la pobreza </span>
+                        <i class="material-icons right">more_vert</i>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Descripción <i class="material-icons right">close</i></span>
+
+                        <p>
+
+                        </p>
+                    </div>
+                </article>
+                <!-- end card Proyecto -->
+
+                <!-- card Proyecto -->
+                <article class="card restricted">
+
+                    <a href="dev2/proyectos/" class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/proyectos_dev2/automatizacion.webp" loading="lazy" width='350' height='250'>
+                    </a>
+                    <div class="card-content-proyectos activator">
+                        <span class="card-title-proyectos activator">Automatización y el trabajo del futuro</span>
+                        <i class="material-icons right">more_vert</i>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Descripción <i class="material-icons right">close</i></span>
+
+                        <p>
+
+                        </p>
+                    </div>
+                </article>
+                <!-- end card Proyecto -->
+                <!-- card Proyecto -->
+                <article class="card restricted">
+
+                    <a href="dev2/proyectos/" class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/proyectos_dev2/discriminacion.webp" loading="lazy" width='350' height='250'>
+                    </a>
+                    <div class="card-content-proyectos activator">
+                        <span class="card-title-proyectos activator">¿Por qué discriminamos? </span>
+                        <i class="material-icons right">more_vert</i>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Descripción <i class="material-icons right">close</i></span>
+
+                        <p>
+
+                        </p>
+                    </div>
+                </article>
+                <!-- end card Proyecto -->
+                <!-- card Proyecto -->
+                <article class="card restricted">
+
+                    <a href="dev2/proyectos/" class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/proyectos_dev2/racismo.webp" loading="lazy" width='350' height='250'>
+                    </a>
+                    <div class="card-content-proyectos activator">
+                        <span class="card-title-proyectos activator">La deuda histórica del racismo </span>
+                        <i class="material-icons right">more_vert</i>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Descripción <i class="material-icons right">close</i></span>
+
+                        <p>
+
+                        </p>
+                    </div>
+                </article>
+                <!-- end card Proyecto -->
+                <!-- card Proyecto -->
+                <article class="card restricted">
+
+                    <a href="dev2/proyectos/" class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/proyectos_dev2/calentamiento_global.webp" loading="lazy" width='350' height='250'>
+                    </a>
+                    <div class="card-content-proyectos activator">
+                        <span class="card-title-proyectos activator">Calentamiento global </span>
+                        <i class="material-icons right">more_vert</i>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Descripción <i class="material-icons right">close</i></span>
+
+                        <p>
+
+                        </p>
+                    </div>
+                </article>
+                <!-- end card Proyecto -->
+                <!-- card Proyecto -->
+                <article class="card restricted">
+
+                    <a href="dev2/proyectos/" class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/proyectos_dev2/depresion_adolescente.webp" loading="lazy" width='350' height='250'>
+                    </a>
+                    <div class="card-content-proyectos activator">
+                        <span class="card-title-proyectos activator">Depresión en adolescentes </span>
+                        <i class="material-icons right">more_vert</i>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Descripción <i class="material-icons right">close</i></span>
+
+                        <p>
+
+                        </p>
+                    </div>
+                </article>
+                <!-- end card Proyecto -->
+                <!-- card Proyecto -->
+                <article class="card restricted">
+
+                    <a href="dev2/proyectos/" class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/proyectos_dev2/problema_agua.webp" loading="lazy" width='350' height='250'>
+                    </a>
+                    <div class="card-content-proyectos activator">
+                        <span class="card-title-proyectos activator">La crisis del agua </span>
+                        <i class="material-icons right">more_vert</i>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Descripción <i class="material-icons right">close</i></span>
+
+                        <p>
+
+                        </p>
+                    </div>
+                </article>
+                <!-- end card Proyecto -->
+                <!-- card Proyecto -->
+                <article class="card restricted">
+
+                    <a href="dev2/proyectos/" class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/proyectos_dev2/corrupcion.webp" loading="lazy" width='350' height='250'>
+                    </a>
+                    <div class="card-content-proyectos activator">
+                        <span class="card-title-proyectos activator">El cáncer de la corrupción </span>
+                        <i class="material-icons right">more_vert</i>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Descripción <i class="material-icons right">close</i></span>
+
+                        <p>
+
+                        </p>
+                    </div>
+                </article>
+                <!-- end card Proyecto -->
+                <!-- card Proyecto -->
+                <article class="card restricted">
+
+                    <a href="dev2/proyectos/" class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/proyectos_dev2/equidad_genero.webp" loading="lazy" width='350' height='250'>
+                    </a>
+                    <div class="card-content-proyectos activator">
+                        <span class="card-title-proyectos activator">Equidad de género </span>
+                        <i class="material-icons right">more_vert</i>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Descripción <i class="material-icons right">close</i></span>
+
+                        <p>
+
+                        </p>
+                    </div>
+                </article>
+                <!-- end card Proyecto -->
+                <!-- card Proyecto -->
+                <article class="card restricted">
+
+                    <a href="dev2/proyectos/" class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/proyectos_dev2/sistemas_explotacion.webp" loading="lazy" width='350' height='250'>
+                    </a>
+                    <div class="card-content-proyectos activator">
+                        <span class="card-title-proyectos activator">Sistemas de explotación </span>
+                        <i class="material-icons right">more_vert</i>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title back-title activator">Descripción <i class="material-icons right">close</i></span>
+
+                        <p>
+
+                        </p>
+                    </div>
+                </article>
+                <!-- end card Proyecto -->
+
+
+
+
+            </div>
+            <!-- end grid -->
+
+
+        </section>
+
+        <!------------------------------------------------->
+        <!--	end grid-proyectos	-->
+        <!------------------------------------------------->
+
+    </div>
+    <!------------------------------------------------->
+    <!--	end responsive container	-->
+    <!------------------------------------------------->
+
+    <!------------------------------------------------->
+    <!--	footer	-->
+    <!------------------------------------------------->
+    <footer>
+        <img class="logo-colegio" src="assets/images/colegio.webp" loading="lazy" width='397' height='200' alt="Colegio">
+        <div class="pwr-huin">
+            <span>Powered by </span>
+            <img class="logo-huin" src="assets/images/logo-huin-final-blanco-(sin-solutions).webp" loading="lazy" width='auto' height='auto' alt="Human Inspiration">
+        </div>
+    </footer>
+    <!------------------------------------------------->
+    <!--	end footer	-->
+    <!------------------------------------------------->
+
+
+
+
+    <!-- Materialize: Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- GASP 3 for animations on view -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+
+
+    <!-- main JS -->
+
+    <script src="assets/js/notyourcourse_weekselector.min.js"></script>
+    <script src="assets/js/confignav_weekselector.min.js"></script>
+    <script src="assets/js/animations_weekselector.js"></script>
+    <script src="../../assets/js/deploy_school.min.js"></script>
+
+
+</body>
+
+</html>
